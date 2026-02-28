@@ -1,0 +1,2384 @@
+<html lang="ru" class="scroll-smooth"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LG Forms | Столы из натурального камня</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+    <style>
+      body { font-family: 'Inter', sans-serif; }
+      .hide-scrollbar::-webkit-scrollbar { display: none; }
+      .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      .fade-in { animation: fadeIn 0.4s ease-in-out; }
+      @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+      .active-thumb { ring: 2px solid #18181b; ring-offset: 2px; }
+    </style>
+  </head>
+  <body class="bg-[#FAFAFA] text-zinc-800 antialiased selection:bg-zinc-200 selection:text-zinc-900 flex flex-col min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-40 border-b border-zinc-200/60 bg-white/80 backdrop-blur-md">
+      <div class="flex h-16 max-w-7xl mr-auto ml-auto pr-6 pl-6 items-center justify-between">
+        <!-- Updated Logo -->
+        <button onclick="route('home'); window.scrollTo({ top: 0, behavior: 'smooth' });" class="flex items-center hover:opacity-80 transition-opacity focus:outline-none">
+          <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/c9cf9a9b-a4f5-400d-bcef-b8793f8b5444_320w.png" alt="LG Forms Logo" class="md:h-10 w-auto h-8 object-contain">
+        </button>
+
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-500">
+          <button onclick="route('catalog')" class="hover:text-zinc-900 transition-colors">
+            Коллекция
+          </button>
+          <button onclick="route('materials')" class="hover:text-zinc-900 transition-colors">
+            Материалы
+          </button>
+          <button onclick="route('home', 'about')" class="hover:text-zinc-900 transition-colors">
+            О нас
+          </button>
+        </div>
+
+        <button onclick="route('home', 'contacts')" class="hidden md:flex items-center gap-2 bg-zinc-900 hover:bg-zinc-800 text-white text-xs font-medium px-4 py-2 rounded-full transition-all">
+          <span>Заказать расчет</span>
+          <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon>
+        </button>
+
+        <button class="md:hidden text-zinc-900">
+          <iconify-icon icon="solar:hamburger-menu-linear" width="24"></iconify-icon>
+        </button>
+      </div>
+    </nav>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main id="app-content" class="flex-grow pt-16">
+      <!-- PAGE: HOME -->
+      <div id="home-page" class="page-section fade-in">
+        <!-- Hero Section -->
+        <section class="md:pt-40 md:pb-32 overflow-hidden pt-40 pb-32 relative">
+          <div class="z-10 max-w-7xl mr-auto ml-auto pr-6 pl-6 relative">
+            <div class="max-w-3xl">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-100 border border-zinc-200 text-zinc-600 text-xs font-medium mb-6">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                Собственное производство в России
+              </div>
+              <h1 class="md:text-6xl lg:text-7xl leading-[1.1] text-4xl font-medium text-zinc-900 tracking-tight mb-6">
+                Искусство камня
+                <br class="hidden md:block">
+                в вашем интерьере
+              </h1>
+              <p class="text-lg md:text-xl text-zinc-500 font-light max-w-xl leading-relaxed mb-10">
+                Эксклюзивные столы из мрамора, гранита и кварцита. Эстетика
+                природы, воплощенная в геометрических формах.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4 gap-x-4 gap-y-4">
+                <button onclick="route('catalog')" class="inline-flex justify-center items-center px-6 py-3.5 bg-zinc-900 text-white text-sm font-medium rounded-lg hover:bg-zinc-800 transition-colors">
+                  Смотреть каталог
+                </button>
+                <button onclick="route('home', 'contacts')" class="inline-flex justify-center items-center px-6 py-3.5 bg-white border border-zinc-200 text-zinc-700 text-sm font-medium rounded-lg hover:bg-zinc-50 transition-colors">
+                  Индивидуальный заказ
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Abstract BG -->
+          <div class="hidden lg:block pointer-events-none opacity-40 w-1/2 h-full absolute top-0 right-0">
+            <div class="absolute inset-0 bg-gradient-to-l from-transparent via-[#FAFAFA]/50 to-[#FAFAFA]"></div>
+            <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/6a505c40-7984-48a2-828d-d94304db3e14_3840w.png" alt="Marble texture" class="mix-blend-multiply w-full h-full object-cover grayscale-0">
+          </div>
+        </section>
+
+        <!-- Features -->
+        <section class="border-y bg-white border-zinc-100 pt-20 pb-20">
+          <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div class="group p-6 rounded-2xl bg-zinc-50">
+                <div class="w-10 h-10 bg-white rounded-lg border border-zinc-200 flex items-center justify-center text-zinc-900 mb-4 shadow-sm">
+                  <iconify-icon icon="solar:crown-star-linear" width="20"></iconify-icon>
+                </div>
+                <h3 class="text-base font-medium text-zinc-900 mb-2">
+                  Премиальные материалы
+                </h3>
+                <p class="text-sm text-zinc-500">
+                  Отбираем лучшие слэбы мрамора и гранита лично для вашего
+                  изделия.
+                </p>
+              </div>
+              <div class="group p-6 rounded-2xl bg-zinc-50">
+                <div class="w-10 h-10 bg-white rounded-lg border border-zinc-200 flex items-center justify-center text-zinc-900 mb-4 shadow-sm">
+                  <iconify-icon icon="solar:ruler-pen-linear" width="20" class=""></iconify-icon>
+                </div>
+                <h3 class="text-base font-medium text-zinc-900 mb-2">
+                  Индивидуальные размеры
+                </h3>
+                <p class="text-sm text-zinc-500">
+                  Адаптируем модели под ваше пространство или создадим
+                  уникальный дизайн.
+                </p>
+              </div>
+              <div class="group p-6 rounded-2xl bg-zinc-50">
+                <div class="w-10 h-10 bg-white rounded-lg border border-zinc-200 flex items-center justify-center text-zinc-900 mb-4 shadow-sm">
+                  <iconify-icon icon="solar:verified-check-linear" width="20"></iconify-icon>
+                </div>
+                <h3 class="text-base font-medium text-zinc-900 mb-2">
+                  Гарантия качества
+                </h3>
+                <p class="text-sm text-zinc-500">
+                  Полный цикл производства: от распила камня до финишной
+                  полировки.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Preview Collection -->
+        <section class="pt-24 pb-24">
+          <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+              <div class="">
+                <h2 class="text-3xl font-medium tracking-tight text-zinc-900 mb-4">
+                  Избранные модели
+                </h2>
+                <p class="text-zinc-500 max-w-lg">
+                  Лаконичные формы, подчеркивающие природную красоту камня.
+                </p>
+              </div>
+              <button onclick="route('catalog')" class="text-sm font-medium text-zinc-900 hover:text-zinc-600 flex items-center gap-1 transition-colors">
+                Весь каталог
+                <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon>
+              </button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div onclick="openProduct(0)" class="group cursor-pointer">
+                <div class="aspect-[4/3] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                  <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/a068ebb1-ab96-49a3-8efa-ad99bcac5bb1_800w.webp" class="group-hover:scale-105 transition-transform duration-500 w-full h-full object-cover">
+                </div>
+                <h3 class="text-lg font-medium text-zinc-900">Balance</h3>
+                <p class="text-sm text-zinc-500">Журнальный столик</p>
+              </div>
+              <div onclick="openProduct(1)" class="group cursor-pointer">
+                <div class="aspect-[4/3] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                  <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/fbff7256-a4bd-4832-96f1-211f87f4c65e_800w.webp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <h3 class="text-lg font-medium text-zinc-900">Ellipse</h3>
+                <p class="text-sm text-zinc-500">Журнальный столик</p>
+              </div>
+              <div onclick="openProduct(2)" class="group cursor-pointer">
+                <div class="aspect-[4/3] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                  <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/3afe9e11-036e-4dd3-aa5d-b57ff3cb0cb3_800w.webp" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <h3 class="text-lg font-medium text-zinc-900">Soft Lines</h3>
+                <p class="text-sm text-zinc-500">Журнальный столик</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-24 bg-zinc-50">
+          <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+              <div class="lg:col-span-5 order-2 lg:order-1">
+                <div class="relative aspect-[3/4] rounded-2xl overflow-hidden bg-zinc-200">
+                  <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/b69c43b6-c4b6-433f-9cdf-77b2b57c1bbd_1600w.jpg" alt="Светлана Михайлова" class="w-full h-full object-cover absolute top-0 right-0 bottom-0 left-0">
+                  <div class="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/60 to-transparent p-8">
+                    <p class="text-white text-sm font-medium">
+                      Светлана Михайлова
+                    </p>
+                    <p class="text-white/80 text-xs">Основатель LG Forms</p>
+                  </div>
+                </div>
+              </div>
+              <div class="lg:col-span-7 order-1 lg:order-2">
+                <h2 class="text-3xl font-medium tracking-tight text-zinc-900 mb-8">
+                  LG Forms — это слияние
+                  <br>
+                  <span class="text-zinc-400 italic font-serif">
+                    Looks Good
+                  </span>
+                  и
+                  <span class="text-zinc-400 italic font-serif">
+                    Good Forms
+                  </span>
+                </h2>
+                <div class="space-y-6 text-zinc-600 font-light leading-relaxed text-lg">
+                  <p class="">
+                    Я верю, что истинная красота рождается из безупречной формы.
+                    Мой фокус — на скульптурности, тактильности и визуальной
+                    гармонии, которые превращают обычный предмет мебели в
+                    ключевой элемент пространства.
+                  </p>
+                  <p class="">
+                    Наши коллекции — это не просто предметы, это наследие. Я
+                    много экспериментирую с изгибами, радиусами и гранями, чтобы
+                    найти ту самую идеальную геометрию, которая будет жить в
+                    гармонии с самим материалом.
+                  </p>
+                  <p class="text-zinc-900 font-normal border-l-2 border-zinc-900 pl-4 py-1">
+                    «Натуральный камень несет в интерьер энергию земли, ее
+                    многовековую историю и неподдельную красоту. Мы лишь
+                    помогаем этой красоте обрести форму.»
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Materials -->
+        <section id="materials" class="py-24 bg-zinc-900 text-white relative overflow-hidden">
+          <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+            <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+              <path d="M0 100 C 20 0 50 0 100 100 Z" fill="none" stroke="white" stroke-width="0.5" vector-effect="non-scaling-stroke"></path>
+            </svg>
+          </div>
+          <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="max-w-2xl">
+              <h2 class="text-3xl md:text-4xl font-medium tracking-tight mb-6">
+                Палитра природы
+              </h2>
+              <p class="text-zinc-400 text-lg font-light leading-relaxed mb-8">
+                От классического Каррарского мрамора до редких пород оникса.
+                Каждый слэб уникален своим рисунком, созданным природой за
+                миллионы лет.
+              </p>
+              <button onclick="route('materials')" class="text-white border border-white/20 px-6 py-3 rounded-lg text-sm font-medium hover:bg-white hover:text-zinc-900 transition-all">
+                Смотреть образцы камня
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- PAGE: CATALOG -->
+      <div id="catalog-page" class="page-section hidden fade-in min-h-screen pb-20">
+        <div class="pt-12 pb-8 border-b border-zinc-100 bg-white">
+          <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center gap-2 text-xs text-zinc-400 mb-4">
+              <button onclick="route('home')" class="hover:text-zinc-900">
+                Главная
+              </button>
+              <span>/</span>
+              <span class="text-zinc-900">Каталог</span>
+            </div>
+            <h1 class="text-3xl font-medium tracking-tight text-zinc-900">
+              Коллекция
+            </h1>
+            <p class="text-zinc-500 mt-2">
+              Все модели, доступные для заказа по индивидуальным размерам.
+            </p>
+          </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 py-12">
+          <div id="catalog-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-10">
+            <!-- Javascript will populate this -->
+
+            <div onclick="openProduct(0)" class="group cursor-pointer">
+              <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                  от 45 000 ₽
+                </div>
+              </div>
+              <h3 class="text-base font-medium text-zinc-900">Marble Cube</h3>
+              <p class="text-xs text-zinc-500 mt-1">Журнальный столик</p>
+            </div>
+
+            <div onclick="openProduct(1)" class="group cursor-pointer">
+              <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                <img src="https://images.unsplash.com/photo-1604578762246-41134e37f9cc?q=80&amp;w=2070&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                  от 62 000 ₽
+                </div>
+              </div>
+              <h3 class="text-base font-medium text-zinc-900">Noir Console</h3>
+              <p class="text-xs text-zinc-500 mt-1">Консоль</p>
+            </div>
+
+            <div onclick="openProduct(2)" class="group cursor-pointer">
+              <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?q=80&amp;w=1974&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                  от 120 000 ₽
+                </div>
+              </div>
+              <h3 class="text-base font-medium text-zinc-900">Oval Dining</h3>
+              <p class="text-xs text-zinc-500 mt-1">Обеденный стол</p>
+            </div>
+
+            <div onclick="openProduct(3)" class="group cursor-pointer">
+              <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                <img src="https://images.unsplash.com/photo-1615529182904-14819c35db37?q=80&amp;w=2080&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                  от 55 000 ₽
+                </div>
+              </div>
+              <h3 class="text-base font-medium text-zinc-900">
+                Travertine Low
+              </h3>
+              <p class="text-xs text-zinc-500 mt-1">Кофейный столик</p>
+            </div>
+
+            <div onclick="openProduct(4)" class="group cursor-pointer">
+              <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/917d6f93-fb36-439a-8c48-884b67b35381_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                  от 38 000 ₽
+                </div>
+              </div>
+              <h3 class="text-base font-medium text-zinc-900">Onyx Side</h3>
+              <p class="text-xs text-zinc-500 mt-1">Приставной столик</p>
+            </div>
+
+            <div onclick="openProduct(5)" class="group cursor-pointer">
+              <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&amp;w=1974&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                  от 70 000 ₽
+                </div>
+              </div>
+              <h3 class="text-base font-medium text-zinc-900">Granite Block</h3>
+              <p class="text-xs text-zinc-500 mt-1">Тумба</p>
+            </div>
+
+            <div onclick="openProduct(6)" class="group cursor-pointer">
+              <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                <img src="https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?q=80&amp;w=1976&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                  от 85 000 ₽
+                </div>
+              </div>
+              <h3 class="text-base font-medium text-zinc-900">Carrara Round</h3>
+              <p class="text-xs text-zinc-500 mt-1">Обеденный стол</p>
+            </div>
+
+            <div onclick="openProduct(7)" class="group cursor-pointer">
+              <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                <img src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?q=80&amp;w=1974&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                  от 49 000 ₽
+                </div>
+              </div>
+              <h3 class="text-base font-medium text-zinc-900">Verde Coffee</h3>
+              <p class="text-xs text-zinc-500 mt-1">Журнальный столик</p>
+            </div>
+
+            <div onclick="openProduct(8)" class="group cursor-pointer">
+              <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                  от 68 000 ₽
+                </div>
+              </div>
+              <h3 class="text-base font-medium text-zinc-900">Sharp Edge</h3>
+              <p class="text-xs text-zinc-500 mt-1">Консоль</p>
+            </div>
+
+            <div onclick="openProduct(9)" class="group cursor-pointer">
+              <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?q=80&amp;w=2070&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                  от 145 000 ₽
+                </div>
+              </div>
+              <h3 class="text-base font-medium text-zinc-900">Monolith Zero</h3>
+              <p class="text-xs text-zinc-500 mt-1">Арт-объект</p>
+            </div>
+
+            <div onclick="openProduct(0)" class="group cursor-pointer">
+              <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                  от 45 000 ₽
+                </div>
+              </div>
+              <h3 class="text-base font-medium text-zinc-900">Marble Cube</h3>
+              <p class="text-xs text-zinc-500 mt-1">Журнальный столик</p>
+            </div>
+
+            <div onclick="openProduct(1)" class="group cursor-pointer">
+              <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                <img src="https://images.unsplash.com/photo-1604578762246-41134e37f9cc?q=80&amp;w=2070&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                  от 62 000 ₽
+                </div>
+              </div>
+              <h3 class="text-base font-medium text-zinc-900">Noir Console</h3>
+              <p class="text-xs text-zinc-500 mt-1">Консоль</p>
+            </div>
+
+            <div onclick="openProduct(2)" class="group cursor-pointer">
+              <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?q=80&amp;w=1974&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                  от 120 000 ₽
+                </div>
+              </div>
+              <h3 class="text-base font-medium text-zinc-900">Oval Dining</h3>
+              <p class="text-xs text-zinc-500 mt-1">Обеденный стол</p>
+            </div>
+
+            <div onclick="openProduct(3)" class="group cursor-pointer">
+              <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                <img src="https://images.unsplash.com/photo-1615529182904-14819c35db37?q=80&amp;w=2080&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                  от 55 000 ₽
+                </div>
+              </div>
+              <h3 class="text-base font-medium text-zinc-900">
+                Travertine Low
+              </h3>
+              <p class="text-xs text-zinc-500 mt-1">Кофейный столик</p>
+            </div>
+
+            <div onclick="openProduct(4)" class="group cursor-pointer">
+              <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/917d6f93-fb36-439a-8c48-884b67b35381_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                  от 38 000 ₽
+                </div>
+              </div>
+              <h3 class="text-base font-medium text-zinc-900">Onyx Side</h3>
+              <p class="text-xs text-zinc-500 mt-1">Приставной столик</p>
+            </div>
+
+            <div onclick="openProduct(5)" class="group cursor-pointer">
+              <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&amp;w=1974&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                  от 70 000 ₽
+                </div>
+              </div>
+              <h3 class="text-base font-medium text-zinc-900">Granite Block</h3>
+              <p class="text-xs text-zinc-500 mt-1">Тумба</p>
+            </div>
+
+            <div onclick="openProduct(6)" class="group cursor-pointer">
+              <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                <img src="https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?q=80&amp;w=1976&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                  от 85 000 ₽
+                </div>
+              </div>
+              <h3 class="text-base font-medium text-zinc-900">Carrara Round</h3>
+              <p class="text-xs text-zinc-500 mt-1">Обеденный стол</p>
+            </div>
+
+            <div onclick="openProduct(7)" class="group cursor-pointer">
+              <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                <img src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?q=80&amp;w=1974&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                  от 49 000 ₽
+                </div>
+              </div>
+              <h3 class="text-base font-medium text-zinc-900">Verde Coffee</h3>
+              <p class="text-xs text-zinc-500 mt-1">Журнальный столик</p>
+            </div>
+
+            <div onclick="openProduct(8)" class="group cursor-pointer">
+              <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                  от 68 000 ₽
+                </div>
+              </div>
+              <h3 class="text-base font-medium text-zinc-900">Sharp Edge</h3>
+              <p class="text-xs text-zinc-500 mt-1">Консоль</p>
+            </div>
+
+            <div onclick="openProduct(9)" class="group cursor-pointer">
+              <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?q=80&amp;w=2070&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                  от 145 000 ₽
+                </div>
+              </div>
+              <h3 class="text-base font-medium text-zinc-900">Monolith Zero</h3>
+              <p class="text-xs text-zinc-500 mt-1">Арт-объект</p>
+            </div>
+
+            <div onclick="openProduct(0)" class="group cursor-pointer">
+              <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                  от 45 000 ₽
+                </div>
+              </div>
+              <h3 class="text-base font-medium text-zinc-900">Marble Cube</h3>
+              <p class="text-xs text-zinc-500 mt-1">Журнальный столик</p>
+            </div>
+
+            <div onclick="openProduct(1)" class="group cursor-pointer">
+              <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                <img src="https://images.unsplash.com/photo-1604578762246-41134e37f9cc?q=80&amp;w=2070&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                  от 62 000 ₽
+                </div>
+              </div>
+              <h3 class="text-base font-medium text-zinc-900">Noir Console</h3>
+              <p class="text-xs text-zinc-500 mt-1">Консоль</p>
+            </div>
+
+            <div onclick="openProduct(2)" class="group cursor-pointer">
+              <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?q=80&amp;w=1974&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                  от 120 000 ₽
+                </div>
+              </div>
+              <h3 class="text-base font-medium text-zinc-900">Oval Dining</h3>
+              <p class="text-xs text-zinc-500 mt-1">Обеденный стол</p>
+            </div>
+
+            <div onclick="openProduct(3)" class="group cursor-pointer">
+              <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                <img src="https://images.unsplash.com/photo-1615529182904-14819c35db37?q=80&amp;w=2080&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                  от 55 000 ₽
+                </div>
+              </div>
+              <h3 class="text-base font-medium text-zinc-900">
+                Travertine Low
+              </h3>
+              <p class="text-xs text-zinc-500 mt-1">Кофейный столик</p>
+            </div>
+
+            <div onclick="openProduct(4)" class="group cursor-pointer">
+              <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/917d6f93-fb36-439a-8c48-884b67b35381_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                  от 38 000 ₽
+                </div>
+              </div>
+              <h3 class="text-base font-medium text-zinc-900">Onyx Side</h3>
+              <p class="text-xs text-zinc-500 mt-1">Приставной столик</p>
+            </div>
+
+            <div onclick="openProduct(5)" class="group cursor-pointer">
+              <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&amp;w=1974&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                  от 70 000 ₽
+                </div>
+              </div>
+              <h3 class="text-base font-medium text-zinc-900">Granite Block</h3>
+              <p class="text-xs text-zinc-500 mt-1">Тумба</p>
+            </div>
+
+            <div onclick="openProduct(6)" class="group cursor-pointer">
+              <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                <img src="https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?q=80&amp;w=1976&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                  от 85 000 ₽
+                </div>
+              </div>
+              <h3 class="text-base font-medium text-zinc-900">Carrara Round</h3>
+              <p class="text-xs text-zinc-500 mt-1">Обеденный стол</p>
+            </div>
+
+            <div onclick="openProduct(7)" class="group cursor-pointer">
+              <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                <img src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?q=80&amp;w=1974&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                  от 49 000 ₽
+                </div>
+              </div>
+              <h3 class="text-base font-medium text-zinc-900">Verde Coffee</h3>
+              <p class="text-xs text-zinc-500 mt-1">Журнальный столик</p>
+            </div>
+
+            <div onclick="openProduct(8)" class="group cursor-pointer">
+              <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                  от 68 000 ₽
+                </div>
+              </div>
+              <h3 class="text-base font-medium text-zinc-900">Sharp Edge</h3>
+              <p class="text-xs text-zinc-500 mt-1">Консоль</p>
+            </div>
+
+            <div onclick="openProduct(9)" class="group cursor-pointer">
+              <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?q=80&amp;w=2070&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                  от 145 000 ₽
+                </div>
+              </div>
+              <h3 class="text-base font-medium text-zinc-900">Monolith Zero</h3>
+              <p class="text-xs text-zinc-500 mt-1">Арт-объект</p>
+            </div>
+          
+              <div onclick="openProduct(0)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 45 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Marble Cube</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Журнальный столик</p>
+              </div>
+          
+              <div onclick="openProduct(1)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 62 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Noir Console</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Консоль</p>
+              </div>
+          
+              <div onclick="openProduct(2)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 120 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Oval Dining</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Обеденный стол</p>
+              </div>
+          
+              <div onclick="openProduct(3)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 55 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Travertine Low</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Кофейный столик</p>
+              </div>
+          
+              <div onclick="openProduct(4)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 38 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Onyx Side</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Приставной столик</p>
+              </div>
+          
+              <div onclick="openProduct(5)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 70 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Granite Block</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Тумба</p>
+              </div>
+          
+              <div onclick="openProduct(6)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 85 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Carrara Round</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Обеденный стол</p>
+              </div>
+          
+              <div onclick="openProduct(7)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 49 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Verde Coffee</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Журнальный столик</p>
+              </div>
+          
+              <div onclick="openProduct(8)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 68 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Sharp Edge</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Консоль</p>
+              </div>
+          
+              <div onclick="openProduct(9)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 145 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Monolith Zero</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Арт-объект</p>
+              </div>
+          
+              <div onclick="openProduct(0)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 45 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Marble Cube</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Журнальный столик</p>
+              </div>
+          
+              <div onclick="openProduct(1)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 62 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Noir Console</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Консоль</p>
+              </div>
+          
+              <div onclick="openProduct(2)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 120 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Oval Dining</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Обеденный стол</p>
+              </div>
+          
+              <div onclick="openProduct(3)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 55 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Travertine Low</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Кофейный столик</p>
+              </div>
+          
+              <div onclick="openProduct(4)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 38 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Onyx Side</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Приставной столик</p>
+              </div>
+          
+              <div onclick="openProduct(5)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 70 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Granite Block</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Тумба</p>
+              </div>
+          
+              <div onclick="openProduct(6)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 85 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Carrara Round</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Обеденный стол</p>
+              </div>
+          
+              <div onclick="openProduct(7)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 49 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Verde Coffee</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Журнальный столик</p>
+              </div>
+          
+              <div onclick="openProduct(8)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 68 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Sharp Edge</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Консоль</p>
+              </div>
+          
+              <div onclick="openProduct(9)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 145 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Monolith Zero</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Арт-объект</p>
+              </div>
+          
+              <div onclick="openProduct(0)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 45 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Marble Cube</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Журнальный столик</p>
+              </div>
+          
+              <div onclick="openProduct(1)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 62 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Noir Console</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Консоль</p>
+              </div>
+          
+              <div onclick="openProduct(2)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 120 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Oval Dining</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Обеденный стол</p>
+              </div>
+          
+              <div onclick="openProduct(3)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 55 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Travertine Low</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Кофейный столик</p>
+              </div>
+          
+              <div onclick="openProduct(4)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 38 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Onyx Side</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Приставной столик</p>
+              </div>
+          
+              <div onclick="openProduct(5)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 70 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Granite Block</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Тумба</p>
+              </div>
+          
+              <div onclick="openProduct(6)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 85 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Carrara Round</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Обеденный стол</p>
+              </div>
+          
+              <div onclick="openProduct(7)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 49 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Verde Coffee</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Журнальный столик</p>
+              </div>
+          
+              <div onclick="openProduct(8)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 68 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Sharp Edge</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Консоль</p>
+              </div>
+          
+              <div onclick="openProduct(9)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 145 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Monolith Zero</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Арт-объект</p>
+              </div>
+          
+              <div onclick="openProduct(0)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 45 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Marble Cube</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Журнальный столик</p>
+              </div>
+          
+              <div onclick="openProduct(1)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 62 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Noir Console</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Консоль</p>
+              </div>
+          
+              <div onclick="openProduct(2)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 120 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Oval Dining</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Обеденный стол</p>
+              </div>
+          
+              <div onclick="openProduct(3)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 55 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Travertine Low</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Кофейный столик</p>
+              </div>
+          
+              <div onclick="openProduct(4)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 38 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Onyx Side</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Приставной столик</p>
+              </div>
+          
+              <div onclick="openProduct(5)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 70 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Granite Block</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Тумба</p>
+              </div>
+          
+              <div onclick="openProduct(6)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 85 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Carrara Round</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Обеденный стол</p>
+              </div>
+          
+              <div onclick="openProduct(7)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 49 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Verde Coffee</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Журнальный столик</p>
+              </div>
+          
+              <div onclick="openProduct(8)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 68 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Sharp Edge</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Консоль</p>
+              </div>
+          
+              <div onclick="openProduct(9)" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от 145 000 ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">Monolith Zero</h3>
+                  <p class="text-xs text-zinc-500 mt-1">Арт-объект</p>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PAGE: SINGLE PRODUCT VIEW -->
+      <div id="product-page" class="page-section hidden fade-in min-h-screen pb-20 bg-white">
+        <div class="pt-8 px-6 max-w-7xl mx-auto">
+          <button onclick="route('catalog')" class="inline-flex items-center gap-2 text-sm text-zinc-500 hover:text-zinc-900 mb-8 transition-colors">
+            <iconify-icon icon="solar:arrow-left-linear"></iconify-icon>
+            Назад в каталог
+          </button>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
+            <!-- Images Gallery -->
+            <div class="space-y-4">
+              <div class="aspect-square bg-zinc-50 rounded-2xl overflow-hidden relative group">
+                <img id="p-main-img" src="" class="w-full h-full object-cover transition-opacity duration-300">
+
+                <div class="absolute inset-0 flex items-center justify-between p-4 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+                  <button class="w-10 h-10 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-zinc-800 shadow-sm pointer-events-auto hover:bg-white" onclick="prevImage()">
+                    <iconify-icon icon="solar:alt-arrow-left-linear"></iconify-icon>
+                  </button>
+                  <button class="w-10 h-10 bg-white/90 backdrop-blur rounded-full flex items-center justify-center text-zinc-800 shadow-sm pointer-events-auto hover:bg-white" onclick="nextImage()">
+                    <iconify-icon icon="solar:alt-arrow-right-linear"></iconify-icon>
+                  </button>
+                </div>
+              </div>
+              <div id="p-thumbnails" class="flex gap-4 overflow-x-auto pb-2 hide-scrollbar">
+                <!-- Populated by JS -->
+              </div>
+            </div>
+
+            <!-- Product Details -->
+            <div class="py-2">
+              <h1 id="p-title" class="text-3xl md:text-4xl font-medium tracking-tight text-zinc-900 mb-2">
+                Product Name
+              </h1>
+              <p id="p-price" class="text-xl text-zinc-500 font-light mb-8">
+                от 00 000 ₽
+              </p>
+
+              <div class="bg-zinc-50 rounded-xl p-6 mb-8 border border-zinc-100">
+                <h3 class="text-sm font-semibold text-zinc-900 mb-4 flex items-center gap-2">
+                  <iconify-icon icon="solar:info-circle-linear" class="text-zinc-400"></iconify-icon>
+                  Характеристики модели
+                </h3>
+                <div id="p-specs" class="space-y-3 text-sm text-zinc-600 leading-relaxed">
+                  <!-- Populated by JS -->
+                </div>
+              </div>
+
+              <div id="p-desc" class="prose prose-sm prose-zinc mb-10 text-zinc-600 leading-relaxed font-light">
+                <!-- Populated by JS -->
+              </div>
+
+              <div class="space-y-4 pt-8 border-t border-zinc-100">
+                <button onclick="document.getElementById('contacts').scrollIntoView({behavior: 'smooth'})" class="w-full bg-zinc-900 text-white font-medium h-12 rounded-lg hover:bg-zinc-800 transition-all flex justify-center items-center gap-2">
+                  <span>Рассчитать стоимость</span>
+                  <iconify-icon icon="solar:arrow-right-linear" width="18"></iconify-icon>
+                </button>
+                <div class="flex items-center justify-center gap-6 text-xs text-zinc-400 mt-4">
+                  <span class="flex items-center gap-1">
+                    <iconify-icon icon="solar:box-minimalistic-linear"></iconify-icon>
+                    Доставка по РФ
+                  </span>
+                  <span class="flex items-center gap-1">
+                    <iconify-icon icon="solar:shield-check-linear"></iconify-icon>
+                    Гарантия 2 года
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="materials-page" class="page-section hidden fade-in min-h-screen bg-white pb-20">
+        <div class="pt-12 pb-8 border-b border-zinc-100 bg-white">
+          <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center gap-2 text-xs text-zinc-400 mb-4">
+              <button onclick="route('home')" class="hover:text-zinc-900 transition-colors">
+                Главная
+              </button>
+              <span>/</span>
+              <span class="text-zinc-900">Материалы</span>
+            </div>
+            <h1 class="text-3xl font-medium tracking-tight text-zinc-900 mb-2">
+              Образцы камня
+            </h1>
+            <p class="text-zinc-500">
+              Популярные виды натурального камня для ваших проектов.
+            </p>
+          </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 py-12">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Material items remain unchanged -->
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/d0c3fabb-7b69-4500-8fb8-69f799c0f2c9_800w.jpg" alt="Classic Travertine" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                Negro Marquina
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/3e8232c3-4e23-490b-9786-1ed4a432e4e2_800w.jpg" alt="Bianco Carrara" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                Orobico Rosso (Rosso Fendi)
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/fbec44d6-c147-4078-800a-1d427434c323_800w.jpg" alt="Nero Marquina" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                VOLAKAS
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/b2c57cab-e80d-45fe-885b-c9e53f5203d6_800w.jpg" alt="Patagonia Quartzite" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                Exotic Black
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/a1157770-f8d0-462e-aede-989e41607579_800w.jpg" alt="Green Onyx" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                ARABESCATO GRIGIO OROBICO
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/f2fa7552-fa15-4ddd-bdf0-3132623f8ff9_800w.jpg" alt="Black Galaxy" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                ARABESCATO GRIGIO OROBICO
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/690a11fc-51df-4d72-bdb0-423cd99e493e_800w.jpg" alt="Verde Guatemala" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                PIETRA GREY
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/a53aed52-84b1-4a37-b5df-8f5172003ff0_800w.jpg" alt="Calacatta Gold" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                ROSSO LEVANTO
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/733cdb8d-9319-45e8-9a3a-272094e77074_800w.jpg" alt="Emperador Dark" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                STATUARIETTO
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/9b9abf65-7c16-46fc-9e09-a2e8b5e199e6_800w.jpg" alt="Новый материал" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                SILVER WAVE
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/ae42eb1f-abb7-49de-bbe5-7a69b34a54aa_800w.jpg" alt="Новый материал" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                PIRGON
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/9529b12c-5fb1-4bfc-8add-d46292c32ecf_800w.jpg" alt="Новый материал" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                Rouge Epique
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/6d7afd4d-808c-45e1-8a83-5bd6cbc605fe_800w.jpg" alt="Новый материал" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                ALEXANDRA BLACK
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/3b5d1677-9f81-47e8-ac42-c7717d03d3d6_800w.jpg" alt="Новый материал" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                Травертин CLASSIC VEIN CUT
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/fd680790-d2b5-48e0-ab88-55ee03a0b7f0_800w.jpg" alt="Новый материал" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                CALACATTA ORO
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/3e0b3320-7664-423c-8333-780265a02062_800w.jpg" alt="Новый материал" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                Травертин SILVER
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/08ef6bb0-1577-46ac-be53-b6ea31fb1ec6_800w.jpg" alt="Новый материал" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                Травертин STRIATO FILLED HONED
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/099815b5-3751-4ad8-a5bd-5d8dacdcd657_800w.jpg" alt="Новый материал" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                Травертин IVORY
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/475fbe2f-a0c3-4346-912e-06f2d15f05b8_800w.jpg" alt="Новый материал" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                Травертин STRIATO UNFILLED HONED
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/1e8ca7f9-118b-4b47-b767-45be94e26ef3_800w.jpg" alt="Новый материал" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                Traonyx
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/e7e67341-30d1-4657-aa47-cb990cc65f29_800w.jpg" alt="Новый материал" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                Оникс GREY
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/44a0e496-63e4-497b-915c-7ddd1a387d9c_800w.jpg" alt="Новый материал" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                Оникс VERDE
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/0fb8f2e3-6240-4f65-8bf4-c454e4acbcac_800w.jpg" alt="Новый материал" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                Оникс GOLDEN TIGER
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/50423239-7dcf-4476-a0c2-2d3cf584ee84_800w.jpg" alt="Новый материал" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                Оникс TERRA BLUE
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/58ff174b-d04d-4cde-83ee-90806bd8fff2_800w.jpg" alt="Новый материал" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                Оникс WHITE LINES
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/28808e0f-afe7-42d3-9791-1fd727151bbf_800w.jpg" alt="Новый материал" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                Silver Roots
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/43f9db38-8f4f-4f1d-b21e-a7097fd89ca6_800w.jpg" alt="Новый материал" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                Травертин Jurassic
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PAGE: PRIVACY POLICY -->
+      <div id="privacy-page" class="page-section hidden fade-in min-h-screen bg-white">
+        <div class="pt-12 pb-8 border-b border-zinc-100 bg-white">
+          <div class="max-w-3xl mx-auto px-6">
+            <div class="flex items-center gap-2 text-xs text-zinc-400 mb-4">
+              <button onclick="route('home')" class="hover:text-zinc-900">
+                Главная
+              </button>
+              <span>/</span>
+              <span class="text-zinc-900">Политика конфиденциальности</span>
+            </div>
+            <h1 class="text-3xl font-medium tracking-tight text-zinc-900 mb-2">
+              Политика в отношении обработки персональных данных
+            </h1>
+            <p class="text-zinc-500">Последнее обновление: 28.02.2026</p>
+          </div>
+        </div>
+
+        <div class="max-w-3xl mx-auto px-6 py-12">
+          <!-- Privacy content remains unchanged -->
+          <div class="space-y-8 text-zinc-600 text-sm leading-relaxed font-light">
+            <section class="space-y-3">
+              <h2 class="text-lg font-medium tracking-tight text-zinc-900">
+                1. Общие положения.
+              </h2>
+              <p>
+                1.1 Настоящая политика обработки персональных данных составлена
+                в соответствии с требованиями Федерального закона Российской
+                Федерации от 27.07.2006 г. № 152-ФЗ «О персональных данных»,
+                Федерального закона от 13.03.2006 г. № 38-ФЗ «О рекламе» и
+                определяет порядок обработки персональных данных и меры по
+                обеспечению безопасности и использованию персональных данных
+                пользователей веб-ресурсов, размещенных в сети «Интернет»,
+                расположенного по сетевым адресам (далее – Сайт, Веб-ресурс,
+                Сетевые адреса).
+              </p>
+              <p>
+                1.2 ИП Михайлова Светлана Владимировна (ОГРНИП 325774600114700,
+                ИНН 710606970080, юридический адрес Г.Москва, ул.Маршала
+                Бирюзова, 36, 73) (далее – Оператор) при обработке персональных
+                данных ставит своей важнейшей целью и условием осуществления
+                своей деятельности соблюдение прав и свобод человека и
+                гражданина, в том числе защиты прав на неприкосновенность
+                частной жизни, личную, семейную тайну, коммерческую тайну.
+              </p>
+              <p>
+                1.3 Настоящая политика Оператора в отношении обработки
+                персональных данных (далее – Политика) применяется ко всей
+                информации, которую Оператор может получить от посетителей
+                Веб-ресурсов, размещенных в сети «Интернет», расположенных по
+                Сетевым адресам.
+              </p>
+            </section>
+            <section class="space-y-3">
+              <h2 class="text-lg font-medium tracking-tight text-zinc-900">
+                2. Основные понятия.
+              </h2>
+              <p>
+                2.1 Персональные данные — любая информация, относящаяся прямо
+                или косвенно к определенному или определяемому пользователю
+                Сайтов, расположенных по Сетевым адресам.
+              </p>
+              <p>
+                2.2 Автоматизированная обработка персональных данных — обработка
+                персональных данных с помощью средств вычислительной техники.
+              </p>
+              <p>
+                2.3 Блокирование персональных данных — временное прекращение
+                обработки персональных данных (за исключением случаев, если
+                обработка необходима для уточнения персональных данных);
+              </p>
+              <p>
+                2.4 Веб-ресурс/Сайт/Сайты (интернет-сайт) — совокупность
+                графических и информационных материалов, а также программ для
+                ЭВМ и баз данных, обеспечивающих их доступность в сети
+                «Интернет», расположенных по сетевым адресам: lgforms.ru.
+              </p>
+              <p>2.5 Пользователь — любой посетитель Сайта.</p>
+              <p>
+                2.6 Информационная система персональных данных — совокупность
+                содержащихся в базах данных персональных данных, обеспечивающих
+                их обработку информационных технологий и технических средств;
+              </p>
+              <p>
+                2.7 Обезличивание персональных данных — действия, в результате
+                которых невозможно определить без использования дополнительной
+                информации принадлежность персональных данных конкретному
+                Пользователю или иному субъекту персональных данных.
+              </p>
+              <p>
+                2.8 Обработка персональных данных — любое действие (операция)
+                или совокупность действий (операций), совершаемых с
+                использованием средств автоматизации или без использования таких
+                средств с персональными данными, включая сбор, запись,
+                систематизацию, накопление, хранение, уточнение (обновление,
+                изменение), извлечение, использование, передачу
+                (распространение, предоставление, доступ), обезличивание,
+                блокирование, удаление, уничтожение персональных данных.
+              </p>
+              <p>
+                2.9 Оператор — государственный орган, муниципальный орган,
+                юридическое лицо, индивидуальный предприниматель или физическое
+                лицо, самостоятельно или совместно с другими лицами организующие
+                и (или) осуществляющие обработку персональных данных, а также
+                определяющие цели обработки персональных данных, состав
+                персональных данных, подлежащих обработке, действия (операции),
+                совершаемые с персональными данными.
+              </p>
+              <p>
+                2.10 Предоставление персональных данных — действия, направленные
+                на раскрытие персональных данных определенному лицу или
+                определенному кругу лиц;
+              </p>
+              <p>
+                2.11 Распространение персональных данных — любые действия,
+                направленные на раскрытие персональных данных неопределенному
+                кругу лиц (передача персональных данных) или на ознакомление с
+                персональными данными неограниченного круга лиц, в том числе
+                обнародование персональных данных в средствах массовой
+                информации, размещение в информационно-телекоммуникационных
+                сетях или предоставление доступа к персональным данным
+                каким-либо иным способом;
+              </p>
+              <p>
+                2.12 Трансграничная передача персональных данных – передача
+                персональных данных на территорию иностранного государства
+                органу власти иностранного государства, иностранному физическому
+                или иностранному юридическому лицу;
+              </p>
+              <p>
+                2.13 Уничтожение персональных данных – любые действия, в
+                результате которых персональные данные уничтожаются безвозвратно
+                с невозможностью дальнейшего восстановления содержания
+                персональных данных в информационной системе персональных данных
+                и (или) в результате которых уничтожаются материальные носители
+                персональных данных.
+              </p>
+              <p>
+                2.14 Файлы «cookies» – это текстовые данные небольшого размера,
+                которые устанавливаются на пользовательское устройство (телефон,
+                компьютер), когда Пользователь находиться на Сайте, а также
+                совершает на нем какие-то действия (например, оставляет заявку
+                на сайте, заполняет форму). В качестве данных cookies могут
+                выступать, число посещений, последовательность действий на
+                сайтах, и аналогичные данных.
+              </p>
+            </section>
+            <section class="space-y-3">
+              <h2 class="text-lg font-medium tracking-tight text-zinc-900">
+                3. Перечень персональных данных Пользователя, подлежащих
+                обработке.
+                <br>
+                Цели обработки персональных данных.
+              </h2>
+              <p>
+                3.1 Перечень персональных данных, подлежащих обработке:
+                <br>
+                - фамилия, имя, отчество;
+                <br>
+                - номер телефона;
+                <br>
+                - адрес электронной почты.
+              </p>
+              <p>
+                3.2 Вышеперечисленные данные, по всему тексту Политики,
+                объединены общим понятием «Персональные данные».
+              </p>
+              <p>
+                3.3 Также на Сайте происходит сбор и обработка обезличенных
+                данных о посетителях (в т. ч. файлов «cookie») с помощью
+                сервисов интернет-статистики.
+              </p>
+              <p>
+                3.4 Цели обработки персональных данных:
+                <br>
+                - оказание услуг/выполнение работ;
+                <br>
+                - предоставление доступа Пользователю к сервисам, информации
+                и/или материалам, в том числе, но не ограничиваясь, содержащимся
+                на Сайтах, других ресурсах;
+                <br>
+                - предоставление рекламных предложений;
+                <br>
+                - предоставление коммерческих предложений от партнеров и иных
+                третьих лиц;
+              </p>
+              <p>
+                3.5 Оператор имеет право направлять Пользователю уведомления о
+                новых продуктах и услугах, специальных предложениях и различных
+                событиях, уведомлениях, обновлениях товаров и услуг, в том
+                числе, но не ограничиваясь в рекламных целях. Пользователь
+                всегда может отказаться от получения информационных сообщений,
+                направив Оператору письмо на адрес электронной почты, указанный
+                в настоящей Политики, с пометкой «Отказ от рассылки».
+              </p>
+              <p>
+                3.6 Обезличенные данные Пользователей, собираемые с помощью
+                сервисов интернет-статистики, служат для сбора информации о
+                действиях пользователей на Сайте, улучшения качества Сайта и его
+                содержания.
+              </p>
+            </section>
+            <section class="space-y-3">
+              <h2 class="text-lg font-medium tracking-tight text-zinc-900">
+                4. Правовые основания обработки персональных данных.
+              </h2>
+              <p>
+                4.1 Обработка Персональных данных осуществляется, в том числе,
+                но не ограничиваясь, на основании ст. 5, 6, 9, 10.1, 18.1,
+                Федерального закона Российской Федерации от 27.07.2006 г. №
+                152-ФЗ «О персональных данных».
+                <br>
+                Основанием для обработки Персональных данных Пользователей
+                является его согласие с настоящей Политикой, в том числе с
+                правила обработки файлов «cookies», посредством пребывания на
+                Сайтах Оператора и нажимая кнопку «Принять», «Согласиться»,
+                «Продолжить», «Оформить», «Оставить заявку» и иные аналогичные.
+              </p>
+              <p>
+                4.2 Оператор обрабатывает персональные данные Пользователя в
+                случае их заполнения и/или отправки Пользователем самостоятельно
+                через специальные формы, расположенные на Сайтах, заполняя
+                соответствующие формы и/или отправляя свои персональные данные
+                Оператору, Пользователь выражает свое согласие с данной
+                Политикой.
+              </p>
+              <p>
+                4.3 Оператор обрабатывает обезличенные данные о Пользователе в
+                случае, если это разрешено в настройках браузера Пользователя
+                (включено сохранение файлов «cookie»). Соглашаясь в том числе с
+                настоящей Политикой, пребывая на Сайтах и нажимая кнопку
+                «Принять», «Согласиться», «Продолжить», «Оформить», «Оставить
+                заявку» и иные аналогичные по содержанию, Пользователь дает
+                согласие на обработку указанных данных.
+              </p>
+            </section>
+            <section class="space-y-3">
+              <h2 class="text-lg font-medium tracking-tight text-zinc-900">
+                5. Права и обязанности
+              </h2>
+              <p>5.1 Оператор обязан:</p>
+              <p>
+                5.1.1 при обработке персональных данных соблюдать требования
+                Законодательства Российской Федерации в отношении обработки и
+                защиты персональных данных, в том числе требования,
+                предусмотренные для сбора персональных данных;
+              </p>
+              <p>
+                5.1.2 при сборе персональных данных, в том числе посредством
+                информационно-телекоммуникационной сети «Интернет», обеспечить
+                запись, систематизацию, накопление, хранение, уточнение
+                (обновление, изменение), извлечение персональных данных
+                Пользователей с использованием баз данных, находящихся на
+                территории Российской Федерации, за исключением случаев,
+                предусмотренных законодательством Российской Федерации;
+              </p>
+              <p>
+                5.1.3 выполнять обязанности, предусмотренные для операторов
+                персональных данных, при получении запросов и/или обращений по
+                вопросам персональных данных от Пользователя и/или его
+                представителя (обладающего полномочиями на представление
+                интересов Пользователя), и/или от контрольного/надзорного
+                органа;
+              </p>
+              <p>
+                5.1.4 принимать меры, направленные на обеспечение выполнения
+                требований, принимать меры по обеспечению безопасности
+                персональных данных при их обработке;
+              </p>
+              <p>
+                5.1.5 выполнять обязанности по устранению нарушений
+                Законодательства Российской Федерации, если такие нарушения были
+                допущены при обработке персональных данных, а также выполнять
+                обязанности по уточнению, блокированию, уничтожению персональных
+                данных в случаях, предусмотренных законодательством Российской
+                Федерации;
+              </p>
+              <p>
+                5.2 Оператор не контролирует и не несет ответственность за сайты
+                третьих лиц, на которые Пользователь может перейти по ссылкам,
+                доступным на Сайтах Оператора. На сайтах третьих лиц может
+                присутствовать собственная политика конфиденциальности и у
+                Пользователя могут собираться или запрашиваться иные
+                персональные данные.
+              </p>
+              <p>5.3 Пользователь имеет право:</p>
+              <p>
+                5.3.1 свободно, своей волей и в своем интересе предоставлять
+                согласие на обработку персональных данных с учетом требований к
+                форме и содержанию согласий на обработку персональных данных;
+              </p>
+              <p>
+                5.3.2 направлять запросы и/или обращения, в том числе повторные,
+                и получать информацию по вопросам обработки персональных данных,
+                принадлежащих Пользователю, в порядке, форме, объеме и в сроки,
+                установленные законодательством Российской Федерации;
+              </p>
+              <p>
+                5.3.3 требовать от Оператора уточнения своих персональных
+                данных, их блокирования или уничтожения в случае, если
+                персональные данные являются неполными, устаревшими, неточными,
+                незаконно полученными или не являются необходимыми для
+                заявленной цели обработки;
+              </p>
+              <p>
+                5.3.4 обратиться с требованием к Оператору прекратить обработку
+                своих персональных данных, а также отозвать предоставленное
+                согласие на обработку персональных данных;
+              </p>
+              <p>
+                5.3.5 осуществлять иные права, предусмотренные законодательством
+                Российской Федерации.
+              </p>
+              <p>
+                5.4 Во всем остальном, что не урегулировано настоящей Политикой
+                Оператор и Пользователь (субъект персональных данных)
+                руководствуются законодательством Российской федерации.
+              </p>
+            </section>
+            <section class="space-y-3">
+              <h2 class="text-lg font-medium tracking-tight text-zinc-900">
+                6. Порядок сбора, хранения, передачи и других видов обработки
+                персональных данных.
+              </h2>
+              <p>
+                6.1 Безопасность персональных данных, которые обрабатываются
+                Оператором, обеспечивается путем реализации правовых,
+                организационных и технических мер, необходимых для выполнения в
+                полном объеме требований действующего законодательства в области
+                защиты персональных данных как это предусмотрено ст. 18.1 и 19
+                Федерального закона от 27 июля 2006 г. № 152-ФЗ «О персональных
+                данных».
+              </p>
+              <p>
+                6.2 Оператор обеспечивает сохранность персональных данных и
+                принимает все возможные меры, исключающие доступ к персональным
+                данным неуполномоченных лиц.
+              </p>
+              <p>
+                6.3 В случаях, предусмотренных процессами обработки персональных
+                данных на Сайтах Оператора, персональные данные могут быть
+                переданы третьим лицам. Передача персональных данных третьим
+                лицам может осуществляться только с согласия Пользователя, а
+                также в случаях, предусмотренных законодательством Российской
+                Федерации, и на основании требований федеральных законов. Более
+                подробная информация о третьих лицах, которым могут быть
+                переданы персональные данные, а также об условиях, когда
+                осуществляется передача персональных данных третьим лицам,
+                приведена в Договоре оферты и иных соглашениях, которые
+                Пользователь принимает при обращении за услугами на Сайтах
+                Оператора.
+              </p>
+              <p>
+                6.4 В случае выявления неточностей в персональных данных
+                Пользователь может актуализировать их самостоятельно, путем
+                направления Оператору уведомление на адрес электронной почты
+                Оператора, указанный в настоящей Политики, с пометкой
+                «Актуализация персональных данных».
+              </p>
+              <p>
+                6.5 Срок обработки персональных данных является неограниченным и
+                определяется моментом достижения целей обработки персональных
+                данных. Пользователь может в любой момент отозвать свое согласие
+                на обработку персональных данных, направив Оператору уведомление
+                посредством электронной почты на электронный адрес, указанный в
+                настоящей Политики, с пометкой «Отзыв согласия на обработку
+                персональных данных». Датой отзыва считается день, следующий за
+                днём получения Оператором уведомления об отзыве согласия на
+                обработку персональных данных и/или получение рекламы.
+              </p>
+            </section>
+            <section class="space-y-3">
+              <h2 class="text-lg font-medium tracking-tight text-zinc-900">
+                7. Трансграничная передача персональных данных.
+              </h2>
+              <p>
+                7.1 Оператор до начала осуществления трансграничной передачи
+                персональных данных обязан убедиться в том, что иностранным
+                государством, на территорию которого предполагается осуществлять
+                передачу персональных данных, обеспечивается надежная защита
+                прав субъектов персональных данных.
+              </p>
+              <p>
+                7.2 Трансграничная передача персональных данных на территории
+                иностранных государств, не входящих в перечень государств,
+                обеспечивающих адекватную защиту персональных данных (как это
+                предусмотрено Приказом Роскомнадзора от 05.08.2022 № 128 «Об
+                утверждении перечня иностранных государств, обеспечивающих
+                адекватную защиту прав субъектов персональных данных»), может
+                осуществляться только в случае наличия согласия, выраженного
+                надлежащим образом, субъекта персональных данных на
+                трансграничную передачу его персональных данных и/или исполнения
+                договора, стороной которого является субъект персональных
+                данных.
+              </p>
+            </section>
+            <section class="space-y-3">
+              <h2 class="text-lg font-medium tracking-tight text-zinc-900">
+                8. Заключительные положения.
+              </h2>
+              <p>
+                8.1 Пользователь обязан полностью ознакомиться с настоящей
+                Политикой до момента начала использования Веб-ресурсов. Начиная
+                использовать Сайт, какой-либо сервис/его отдельные функции,
+                Пользователь считается принявшим условия настоящей Политики в
+                полном объеме, без всяких оговорок и исключений в порядке статьи
+                438 Гражданского кодекса Российской Федерации.
+              </p>
+              <p>
+                8.2 Пользователь может получить любые разъяснения по
+                интересующим вопросам, касающимся обработки его персональных
+                данных, в том числе о сроках обработки Персональных данных,
+                способах, порядка уничтожения данных и прочее, обратившись к
+                Оператору, посредством направления запроса на электронную почту,
+                указанную в настоящей Политики.
+              </p>
+              <p>
+                8.3 В данном документе будут отражены любые изменения Политики
+                обработки персональных данных Оператором. Политика действует
+                бессрочно до замены ее новой версией. Оповещение пользователей
+                об обновлении Политики производится путем публикации актуальной
+                версии в сети «Интернет» по Сетевым адресам Оператора.
+              </p>
+              <p>
+                8.4 Соглашаясь с настоящей Политикой, Пользователь свободно,
+                своей волей и в своем интересе дает свое согласие Оператору на
+                обработку своих персональных данных, указанных при регистрации,
+                отправке данных, получение рекламной информации, с
+                использованием любых средств связи.
+              </p>
+              <p>
+                8.5 Настоящим Пользователь уведомлен Оператором о том, что
+                предполагаемыми пользователями персональных данных являются
+                работники Оператора (а также лица, привлеченные на условиях
+                гражданско-правового и иных договоров).
+              </p>
+              <p>8.6 О файлах «Cookie» и метрических системах:</p>
+              <p>
+                8.6.1 При первом посещении данного сайта, с помощью нового
+                браузера или в режиме приватного просмотра предоставляется
+                баннер, запрашивающий согласие Пользователя на обработку файлов
+                «Cookie» в соответствии с требованиями законодательства. Нажав
+                кнопку «Принять» аналогичную или продолжая пользоваться нашим
+                сайтом, пользователь соглашается на размещение файлов «Cookie».
+              </p>
+              <p>
+                8.6.2 Использование функционала метрических систем, таких как
+                Яндекс Метрика и другие, позволяет определить уникального
+                посетителя сайта, формировать сведения о его предпочтениях и
+                поведении на сайте.
+              </p>
+              <p>
+                8.6.3 Оператор обрабатывает данные метрических систем с целью:
+                <br>
+                8.6.3.1 сбора и анализа информации о производительности и
+                использовании сайта Пользователями;
+                <br>
+                8.6.3.2 повышения удобства использования Сайтов, сервисов,
+                оказания услуг;
+                <br>
+                8.6.3.3 персонализации взаимодействия;
+                <br>
+                8.6.3.4 идентификации Пользователей;
+                <br>
+                8.6.3.5 оценки эффективности рекламных кампаний.
+              </p>
+              <p>
+                8.6.4 Если вы хотите отказаться от предоставления файлов
+                «Cookie» и метрических данных: использование файлов «Cookie» и
+                метрических систем может быть отключено в интернет-обозревателе
+                (просим вас ознакомиться с данной возможностью в разделе
+                «Справка» вашего браузера). При отключении использования файлов
+                «Cookie» могут быть недоступны некоторые функции сайта.
+              </p>
+              <p>8.7 Дата публикации настоящей версии Политики: 28.02.2026.</p>
+            </section>
+            <div class="mt-12 pt-8 border-t border-zinc-100 space-y-2">
+              <p class="font-medium text-zinc-900">
+                Наименование организации: ИП Михайлова Светлана Владимировна
+              </p>
+              <p>ОГРНИП/ОГРН: 325774600114700</p>
+              <p>ИНН: 710606970080</p>
+              <p>
+                Электронная почта Оператора:
+                <a href="mailto:mikhailova.lgd@gmail.com" class="text-zinc-900 hover:underline">
+                  mikhailova.lgd@gmail.com
+                </a>
+              </p>
+              <p>
+                Телефон службы поддержки:
+                <a href="tel:+79099457096" class="text-zinc-900 hover:underline">
+                  +7 909 945 70 96
+                </a>
+              </p>
+              <p class="pt-4 text-xs text-zinc-500">
+                Все сообщения, претензии, информация направляется по указанному
+                адресу электронной почты, в мессенджеры или телефону службы
+                поддержки клиентов.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORM SECTION (Shared across all views except Privacy) -->
+      <section id="contacts" class="py-24 bg-zinc-50 border-t border-zinc-200 form-section">
+        <div class="max-w-xl mx-auto px-6">
+          <div class="text-center mb-10">
+            <h2 class="text-2xl font-medium tracking-tight text-zinc-900 mb-3">
+              Оставить заявку
+            </h2>
+            <p class="text-zinc-500 text-sm">
+              Свяжемся с вами для обсуждения деталей и расчета стоимости.
+            </p>
+          </div>
+
+          <form class="space-y-5 bg-white p-8 rounded-2xl shadow-sm border border-zinc-100">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div class="space-y-1.5">
+                <label class="text-xs font-medium text-zinc-700 ml-1">
+                  Имя
+                </label>
+                <input type="text" class="w-full bg-zinc-50 border border-zinc-200 rounded-lg px-4 py-2.5 text-sm outline-none focus:ring-2 focus:ring-zinc-900/10 focus:border-zinc-900 transition-all placeholder:text-zinc-400" placeholder="Иван">
+              </div>
+              <div class="space-y-1.5">
+                <label class="text-xs font-medium text-zinc-700 ml-1">
+                  Телефон
+                </label>
+                <input type="tel" class="w-full bg-zinc-50 border border-zinc-200 rounded-lg px-4 py-2.5 text-sm outline-none focus:ring-2 focus:ring-zinc-900/10 focus:border-zinc-900 transition-all placeholder:text-zinc-400" placeholder="+7">
+              </div>
+            </div>
+            <div class="space-y-1.5">
+              <label class="text-xs font-medium text-zinc-700 ml-1">
+                Комментарий
+              </label>
+              <textarea rows="3" class="w-full bg-zinc-50 border border-zinc-200 rounded-lg px-4 py-2.5 text-sm outline-none focus:ring-2 focus:ring-zinc-900/10 focus:border-zinc-900 transition-all placeholder:text-zinc-400 resize-none" placeholder="Какой стол вас интересует?"></textarea>
+            </div>
+            <button type="button" class="w-full bg-zinc-900 text-white font-medium text-sm py-3 rounded-lg hover:bg-zinc-800 transition-all">
+              Отправить
+            </button>
+            <p class="text-[10px] text-zinc-400 text-center mt-3">
+              Нажимая кнопку, вы соглашаетесь с
+              <a onclick="route('privacy')" class="underline hover:text-zinc-600 cursor-pointer">
+                политикой конфиденциальности
+              </a>
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="fixed bottom-0 left-0 w-full bg-zinc-900 text-zinc-300 z-[100] transform translate-y-full transition-transform duration-500 border-t border-zinc-800 shadow-[0_-10px_40px_rgba(0,0,0,0.2)]">
+      <div class="max-w-7xl mx-auto px-6 py-10 min-h-[25vh] flex flex-col justify-center">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          <div class="lg:col-span-8 space-y-4 text-sm md:text-base font-light leading-relaxed">
+            <p>
+              Выбирая «Принять все», Вы соглашаетесь с использованием файлов
+              cookie и
+              <a onclick="route('privacy')" class="underline decoration-zinc-600 underline-offset-4 text-white hover:text-zinc-200 cursor-pointer font-medium transition-colors">
+                политикой в отношении обработки персональных данных
+              </a>
+              на наших сайтах.
+            </p>
+            <p class="text-zinc-400 text-xs md:text-sm">
+              Обработка данных осуществляется для интеграции внешнего контента,
+              интеграции потокового контента, а также статистического анализа
+              данных. Файлы cookie хранятся в Вашем браузере. В настройках
+              браузера Вы можете ограничить или вовсе отключить использование
+              файлов cookie.
+              <a onclick="route('privacy')" class="underline decoration-zinc-700 underline-offset-4 text-zinc-300 hover:text-white cursor-pointer font-medium transition-colors">
+                Подробнее
+              </a>
+            </p>
+          </div>
+
+          <div class="lg:col-span-4 flex flex-col gap-3">
+            <button onclick="acceptAllCookies()" class="w-full bg-white text-zinc-900 font-medium py-3 px-6 rounded-lg hover:bg-zinc-100 transition-colors text-sm">
+              Принять все
+            </button>
+            <button onclick="rejectAllCookies()" class="w-full bg-transparent border border-zinc-700 text-white font-medium py-3 px-6 rounded-lg hover:bg-zinc-800 transition-colors text-sm">
+              Отклонить все
+            </button>
+            <button onclick="toggleCookieSettings()" class="w-full text-zinc-400 hover:text-white font-medium py-2 px-6 rounded-lg transition-colors text-sm underline decoration-zinc-700 underline-offset-4">
+              Настроить cookie
+            </button>
+          </div>
+        </div>
+
+        <!-- Cookie Settings Panel (Hidden by default) -->
+        <div id="cookie-settings" class="hidden mt-8 pt-8 border-t border-zinc-800">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Necessary -->
+            <div class="flex items-start gap-4">
+              <div class="flex-grow">
+                <p class="text-sm font-medium text-white mb-1">Необходимые</p>
+                <p class="text-xs text-zinc-500">
+                  Обеспечивают базовую работу сайта. Не могут быть отключены.
+                </p>
+              </div>
+              <div class="relative inline-flex h-5 w-9 shrink-0 cursor-not-allowed rounded-full border-2 border-transparent bg-emerald-500 opacity-60">
+                <span class="translate-x-4 inline-block h-4 w-4 transform rounded-full bg-white shadow ring-0"></span>
+              </div>
+            </div>
+
+            <!-- Analytics -->
+            <div class="flex items-start gap-4">
+              <div class="flex-grow">
+                <p class="text-sm font-medium text-white mb-1">Аналитические</p>
+                <p class="text-xs text-zinc-500">
+                  Помогают нам улучшать сайт, собирая анонимную статистику
+                  использования.
+                </p>
+              </div>
+              <button id="toggle-analytics" type="button" data-state="off" class="bg-zinc-700 relative inline-flex h-5 w-9 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none" onclick="toggleCookieSwitch(this)">
+                <span class="translate-x-0 pointer-events-none inline-block h-4 w-4 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"></span>
+              </button>
+            </div>
+
+            <!-- Marketing -->
+            <div class="flex items-start gap-4">
+              <div class="flex-grow">
+                <p class="text-sm font-medium text-white mb-1">Маркетинговые</p>
+                <p class="text-xs text-zinc-500">
+                  Используются для персонализации рекламы и интеграции сторонних
+                  сервисов.
+                </p>
+              </div>
+              <button id="toggle-marketing" type="button" data-state="off" class="bg-zinc-700 relative inline-flex h-5 w-9 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none" onclick="toggleCookieSwitch(this)">
+                <span class="translate-x-0 pointer-events-none inline-block h-4 w-4 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"></span>
+              </button>
+            </div>
+          </div>
+
+          <div class="mt-8 flex justify-end">
+            <button onclick="saveCookieSettings()" class="bg-zinc-800 text-white font-medium py-2.5 px-6 rounded-lg hover:bg-zinc-700 transition-colors text-sm border border-zinc-700">
+              Сохранить настройки
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-zinc-100 pt-16 pb-8">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-zinc-400">
+          <p>© 2023 LG Forms. Все права защищены.</p>
+          <div class="flex gap-6">
+            <a onclick="route('privacy')" class="hover:text-zinc-600 cursor-pointer">
+              Политика конфиденциальности
+            </a>
+            <a href="#" class="hover:text-zinc-600 cursor-pointer">Оферта</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Logic Script -->
+    <script>
+      // --- Data ---
+      const products = [
+          {
+              id: 0,
+              name: "Marble Cube",
+              price: "45 000",
+              cat: "Журнальный столик",
+              desc: "Монолитная форма куба раскрывает всю глубину рисунка камня. Идеальная геометрия для современного интерьера, где важна каждая деталь.",
+              specs: [
+                  "Стол из акцентного травертина или мрамора.",
+                  "Столешница 40х40 см, высота 40 см.",
+                  "Полая конструкция с усиленным каркасом."
+              ],
+              images: [
+                  "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
+                  "https://images.unsplash.com/photo-1597072689227-8882273e8f6e?q=80&w=1974&auto=format&fit=crop",
+                  "https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=1932&auto=format&fit=crop"
+              ]
+          },
+          {
+              id: 1,
+              name: "Noir Console",
+              price: "62 000",
+              cat: "Консоль",
+              desc: "Элегантная консоль для прихожей или гостиной. Тонкая столешница визуально облегчает конструкцию, сохраняя монументальность камня.",
+              specs: [
+                  "Натуральный мрамор Nero Marquina.",
+                  "Длина 120 см, глубина 35 см, высота 85 см.",
+                  "Крепление к стене для безопасности."
+              ],
+              images: [
+                  "https://images.unsplash.com/photo-1604578762246-41134e37f9cc?q=80&w=2070&auto=format&fit=crop",
+                  "https://images.unsplash.com/photo-1618220179428-22790b461013?q=80&w=2700&auto=format&fit=crop",
+                  "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=2532&auto=format&fit=crop"
+              ]
+          },
+          {
+              id: 2,
+              name: "Oval Dining",
+              price: "120 000",
+              cat: "Обеденный стол",
+              desc: "Центральный элемент столовой зоны. Плавные линии овала создают атмосферу уюта и располагают к долгим беседам.",
+              specs: [
+                  "Массив белого каррарского мрамора.",
+                  "Размер столешницы 180х90 см.",
+                  "Подстолье: металл в черной порошковой окраске."
+              ],
+              images: [
+                  "https://images.unsplash.com/photo-1595428774223-ef52624120d2?q=80&w=1974&auto=format&fit=crop",
+                  "https://images.unsplash.com/photo-1604061986761-d9d64d2f637d?q=80&w=2670&auto=format&fit=crop",
+                  "https://images.unsplash.com/photo-1617103996702-96ff29b1c467?q=80&w=2532&auto=format&fit=crop"
+              ]
+          },
+          {
+              id: 3,
+              name: "Travertine Low",
+              price: "55 000",
+              cat: "Кофейный столик",
+              desc: "Низкий столик в японском стиле. Теплая текстура травертина добавляет интерьеру природной мягкости.",
+              specs: [
+                  "Бежевый травертин с открытыми порами.",
+                  "Диаметр 80 см, высота 30 см.",
+                  "Обработка 'Honed' (матовая)."
+              ],
+              images: [
+                  "https://images.unsplash.com/photo-1615529182904-14819c35db37?q=80&w=2080&auto=format&fit=crop",
+                  "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=1974&auto=format&fit=crop"
+              ]
+          },
+          {
+              id: 4,
+              name: "Onyx Side",
+              price: "38 000",
+              cat: "Приставной столик",
+              desc: "Маленький шедевр из полупрозрачного оникса. При правильном освещении камень начинает светиться изнутри.",
+              specs: [
+                  "Зеленый оникс (Green Onyx).",
+                  "Высота 50 см, диаметр 35 см.",
+                  "Монолитная полированная колонна."
+              ],
+              images: [
+                  "https://images.unsplash.com/photo-1633505899105-0814ed3015b6?q=80&w=2070&auto=format&fit=crop",
+                  "https://images.unsplash.com/photo-1598300056393-8dd33ec147c2?q=80&w=1974&auto=format&fit=crop"
+              ]
+          },
+          {
+              id: 5,
+              name: "Granite Block",
+              price: "70 000",
+              cat: "Тумба",
+              desc: "Брутальный предмет из черного гранита. Абсолютная надежность и вечная классика.",
+              specs: [
+                  "Гранит Black Galaxy.",
+                  "Размеры 45х45х55 см.",
+                  "Полировка всех видимых граней."
+              ],
+              images: [
+                  "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=1974&auto=format&fit=crop",
+                  "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?q=80&w=2070&auto=format&fit=crop"
+              ]
+          },
+          {
+              id: 6,
+              name: "Carrara Round",
+              price: "85 000",
+              cat: "Обеденный стол",
+              desc: "Классический круглый стол. Идеальное решение для небольших кухонь, где важен стиль и эргономика.",
+              specs: [
+                  "Итальянский мрамор Carrara.",
+                  "Диаметр 100 см, высота 75 см.",
+                  "Коническое основание."
+              ],
+              images: [
+                  "https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?q=80&w=1976&auto=format&fit=crop"
+              ]
+          },
+          {
+              id: 7,
+              name: "Verde Coffee",
+              price: "49 000",
+              cat: "Журнальный столик",
+              desc: "Глубокий зеленый цвет мрамора Verde Guatemala напоминает о густых тропических лесах.",
+              specs: [
+                  "Мрамор Verde Guatemala (Индия).",
+                  "Размер 60х60 см, высота 35 см.",
+                  "Фигурная кромка столешницы."
+              ],
+              images: [
+                  "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?q=80&w=1974&auto=format&fit=crop"
+              ]
+          },
+          {
+              id: 8,
+              name: "Sharp Edge",
+              price: "68 000",
+              cat: "Консоль",
+              desc: "Геометрическая консоль со сложными гранями. Демонстрация мастерства камнеобработки.",
+              specs: [
+                  "Серый гранит или кварцит.",
+                  "Длина 100 см.",
+                  "Скрытая система крепления."
+              ],
+              images: [
+                  "https://images.unsplash.com/photo-1597072689227-8882273e8f6e?q=80&w=1974&auto=format&fit=crop"
+              ]
+          },
+          {
+              id: 9,
+              name: "Monolith Zero",
+              price: "145 000",
+              cat: "Арт-объект",
+              desc: "Больше чем мебель. Скульптура, высеченная из цельного блока камня.",
+              specs: [
+                  "Уникальный слэб кварцита.",
+                  "Индивидуальные размеры.",
+                  "Вес изделия более 150 кг."
+              ],
+              images: [
+                  "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?q=80&w=2070&auto=format&fit=crop"
+              ]
+          }
+      ];
+
+      // --- Init Catalog ---
+      const grid = document.getElementById('catalog-grid');
+      products.forEach(p => {
+          grid.innerHTML += `
+              <div onclick="openProduct(${p.id})" class="group cursor-pointer">
+                  <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                      <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                          от ${p.price} ₽
+                      </div>
+                  </div>
+                  <h3 class="text-base font-medium text-zinc-900">${p.name}</h3>
+                  <p class="text-xs text-zinc-500 mt-1">${p.cat}</p>
+              </div>
+          `;
+      });
+
+      // --- Routing Logic ---
+      function route(pageId, anchorId = null) {
+          document.querySelectorAll('.page-section').forEach(el => el.classList.add('hidden'));
+          document.querySelectorAll('.form-section').forEach(el => el.classList.remove('hidden'));
+
+          if (pageId === 'home') {
+              document.getElementById('home-page').classList.remove('hidden');
+              if (anchorId) {
+                  setTimeout(() => {
+                      const el = document.getElementById(anchorId);
+                      if(el) el.scrollIntoView({behavior: 'smooth'});
+                  }, 100);
+              } else {
+                  window.scrollTo(0, 0);
+              }
+          }
+          else if (pageId === 'catalog') {
+              document.getElementById('catalog-page').classList.remove('hidden');
+              window.scrollTo(0, 0);
+          }
+          else if (pageId === 'privacy') {
+              document.getElementById('privacy-page').classList.remove('hidden');
+              document.querySelectorAll('.form-section').forEach(el => el.classList.add('hidden'));
+              window.scrollTo(0, 0);
+          }
+          else if (pageId === 'materials') {
+              document.getElementById('materials-page').classList.remove('hidden');
+              window.scrollTo(0, 0);
+          }
+      }
+
+      // --- Product View Logic ---
+      let currentProduct = null;
+      let currentImageIndex = 0;
+
+      function openProduct(id) {
+          currentProduct = products.find(p => p.id === id);
+          if(!currentProduct) return;
+
+          document.getElementById('p-title').innerText = currentProduct.name;
+          document.getElementById('p-price').innerText = 'от ' + currentProduct.price + ' ₽';
+          document.getElementById('p-desc').innerText = currentProduct.desc;
+
+          const specsContainer = document.getElementById('p-specs');
+          specsContainer.innerHTML = '';
+          currentProduct.specs.forEach(spec => {
+              specsContainer.innerHTML += `
+                  <div class="flex items-start gap-2.5">
+                      <div class="mt-1.5 min-w-[4px] h-[4px] rounded-full bg-zinc-400"></div>
+                      <span>${spec}</span>
+                  </div>
+              `;
+          });
+
+          currentImageIndex = 0;
+          renderImages();
+
+          document.querySelectorAll('.page-section').forEach(el => el.classList.add('hidden'));
+          document.getElementById('product-page').classList.remove('hidden');
+          document.querySelectorAll('.form-section').forEach(el => el.classList.remove('hidden'));
+          window.scrollTo(0, 0);
+      }
+
+      function renderImages() {
+          const mainImg = document.getElementById('p-main-img');
+          mainImg.style.opacity = '0';
+
+          setTimeout(() => {
+              mainImg.src = currentProduct.images[currentImageIndex];
+              mainImg.onload = () => { mainImg.style.opacity = '1'; };
+          }, 150);
+
+          const thumbsContainer = document.getElementById('p-thumbnails');
+          thumbsContainer.innerHTML = '';
+
+          if(currentProduct.images.length > 1) {
+              currentProduct.images.forEach((img, idx) => {
+                  const isActive = idx === currentImageIndex ? 'ring-2 ring-zinc-900' : 'opacity-70 hover:opacity-100';
+                  thumbsContainer.innerHTML += `
+                      <button onclick="setImage(${idx})" class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden border border-zinc-200 ${isActive} transition-all">
+                          <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/c543a9e1-f226-4ced-80b0-feb8445a75b9_1600w.jpg" class="w-full h-full object-cover">
+                      </button>
+                  `;
+              });
+          }
+      }
+
+      function setImage(idx) {
+          currentImageIndex = idx;
+          renderImages();
+      }
+
+      function nextImage() {
+          if(!currentProduct) return;
+          currentImageIndex = (currentImageIndex + 1) % currentProduct.images.length;
+          renderImages();
+      }
+
+      function prevImage() {
+          if(!currentProduct) return;
+          currentImageIndex = (currentImageIndex - 1 + currentProduct.images.length) % currentProduct.images.length;
+          renderImages();
+      }
+
+      // --- Cookie Logic ---
+      document.addEventListener('DOMContentLoaded', () => {
+          const consentStatus = localStorage.getItem('cookieConsent');
+          if (!consentStatus) {
+              setTimeout(() => {
+                  document.getElementById('cookie-banner').classList.remove('translate-y-full');
+              }, 800);
+          }
+      });
+
+      function closeCookieBanner() {
+          document.getElementById('cookie-banner').classList.add('translate-y-full');
+      }
+
+      function acceptAllCookies() {
+          localStorage.setItem('cookieConsent', JSON.stringify({ analytics: true, marketing: true, timestamp: new Date().toISOString() }));
+          closeCookieBanner();
+          console.log('Cookies Accepted: All tracking initialized.');
+      }
+
+      function rejectAllCookies() {
+          localStorage.setItem('cookieConsent', JSON.stringify({ analytics: false, marketing: false, timestamp: new Date().toISOString() }));
+          closeCookieBanner();
+
+          document.cookie.split(";").forEach((c) => {
+              document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
+          });
+          console.log('Cookies Rejected: Only necessary session active.');
+      }
+
+      function toggleCookieSettings() {
+          const settings = document.getElementById('cookie-settings');
+          settings.classList.toggle('hidden');
+      }
+
+      function toggleCookieSwitch(btn) {
+          const span = btn.querySelector('span');
+          const currentState = btn.getAttribute('data-state');
+
+          if (currentState === 'off') {
+              btn.classList.remove('bg-zinc-700');
+              btn.classList.add('bg-emerald-500');
+              span.classList.remove('translate-x-0');
+              span.classList.add('translate-x-4');
+              btn.setAttribute('data-state', 'on');
+          } else {
+              btn.classList.remove('bg-emerald-500');
+              btn.classList.add('bg-zinc-700');
+              span.classList.remove('translate-x-4');
+              span.classList.add('translate-x-0');
+              btn.setAttribute('data-state', 'off');
+          }
+      }
+
+      function saveCookieSettings() {
+          const analyticsOn = document.getElementById('toggle-analytics').getAttribute('data-state') === 'on';
+          const marketingOn = document.getElementById('toggle-marketing').getAttribute('data-state') === 'on';
+
+          localStorage.setItem('cookieConsent', JSON.stringify({
+              analytics: analyticsOn,
+              marketing: marketingOn,
+              timestamp: new Date().toISOString()
+          }));
+
+          if(!analyticsOn && !marketingOn) {
+              document.cookie.split(";").forEach((c) => {
+                  document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
+              });
+          }
+
+          closeCookieBanner();
+          console.log(`Cookies Saved: Analytics [${analyticsOn}], Marketing [${marketingOn}]`);
+      }
+    </script>
+  
+</body></html>
