@@ -1,0 +1,810 @@
+<html lang="ru" class="scroll-smooth"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LG Forms | Столы из натурального камня</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+    <style>
+      body { font-family: 'Inter', sans-serif; }
+      .hide-scrollbar::-webkit-scrollbar { display: none; }
+      .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      .fade-in { animation: fadeIn 0.4s ease-in-out; }
+      @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+      .active-thumb { ring: 2px solid #18181b; ring-offset: 2px; }
+    </style>
+  </head>
+  <body class="bg-[#FAFAFA] text-zinc-800 antialiased selection:bg-zinc-200 selection:text-zinc-900 flex flex-col min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-40 border-b border-zinc-200/60 bg-white/80 backdrop-blur-md">
+      <div class="flex h-16 max-w-7xl mr-auto ml-auto pr-6 pl-6 items-center justify-between">
+        <!-- Updated Logo -->
+        <button onclick="route('home'); window.scrollTo({ top: 0, behavior: 'smooth' });" class="flex items-center hover:opacity-80 transition-opacity focus:outline-none">
+          <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/c9cf9a9b-a4f5-400d-bcef-b8793f8b5444_320w.png" alt="LG Forms Logo" class="md:h-10 w-auto h-8 object-contain">
+        </button>
+
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-500">
+          <button onclick="route('catalog')" class="hover:text-zinc-900 transition-colors">
+            Коллекция
+          </button>
+          <button onclick="route('materials')" class="hover:text-zinc-900 transition-colors">
+            Материалы
+          </button>
+          <button onclick="route('home', 'about')" class="hover:text-zinc-900 transition-colors">
+            О нас
+          </button>
+        </div>
+
+        <button onclick="route('home', 'contacts')" class="hidden md:flex items-center gap-2 bg-zinc-900 hover:bg-zinc-800 text-white text-xs font-medium px-4 py-2 rounded-full transition-all">
+          <span>Заказать расчет</span>
+          <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon>
+        </button>
+
+        <button class="md:hidden text-zinc-900">
+          <iconify-icon icon="solar:hamburger-menu-linear" width="24"></iconify-icon>
+        </button>
+      </div>
+    </nav>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main id="app-content" class="flex-grow pt-16">
+      <!-- PAGE: HOME -->
+      <div id="materials-page" class="page-section hidden fade-in min-h-screen bg-white pb-20">
+        <div class="pt-12 pb-8 border-b border-zinc-100 bg-white">
+          <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center gap-2 text-xs text-zinc-400 mb-4">
+              <button onclick="route('home')" class="hover:text-zinc-900 transition-colors">
+                Главная
+              </button>
+              <span>/</span>
+              <span class="text-zinc-900">Материалы</span>
+            </div>
+            <h1 class="text-3xl font-medium tracking-tight text-zinc-900 mb-2">
+              Образцы камня
+            </h1>
+            <p class="text-zinc-500">
+              Популярные виды натурального камня для ваших проектов.
+            </p>
+          </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 py-12">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Material items remain unchanged -->
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/d0c3fabb-7b69-4500-8fb8-69f799c0f2c9_800w.jpg" alt="Classic Travertine" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                Negro Marquina
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/3e8232c3-4e23-490b-9786-1ed4a432e4e2_800w.jpg" alt="Bianco Carrara" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                Orobico Rosso (Rosso Fendi)
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/fbec44d6-c147-4078-800a-1d427434c323_800w.jpg" alt="Nero Marquina" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                VOLAKAS
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/b2c57cab-e80d-45fe-885b-c9e53f5203d6_800w.jpg" alt="Patagonia Quartzite" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                Exotic Black
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/a1157770-f8d0-462e-aede-989e41607579_800w.jpg" alt="Green Onyx" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                ARABESCATO GRIGIO OROBICO
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/f2fa7552-fa15-4ddd-bdf0-3132623f8ff9_800w.jpg" alt="Black Galaxy" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                ARABESCATO GRIGIO OROBICO
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/690a11fc-51df-4d72-bdb0-423cd99e493e_800w.jpg" alt="Verde Guatemala" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                PIETRA GREY
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/a53aed52-84b1-4a37-b5df-8f5172003ff0_800w.jpg" alt="Calacatta Gold" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                ROSSO LEVANTO
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/733cdb8d-9319-45e8-9a3a-272094e77074_800w.jpg" alt="Emperador Dark" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                STATUARIETTO
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/9b9abf65-7c16-46fc-9e09-a2e8b5e199e6_800w.jpg" alt="Новый материал" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                SILVER WAVE
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/ae42eb1f-abb7-49de-bbe5-7a69b34a54aa_800w.jpg" alt="Новый материал" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                PIRGON
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/9529b12c-5fb1-4bfc-8add-d46292c32ecf_800w.jpg" alt="Новый материал" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                Rouge Epique
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/6d7afd4d-808c-45e1-8a83-5bd6cbc605fe_800w.jpg" alt="Новый материал" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                ALEXANDRA BLACK
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/3b5d1677-9f81-47e8-ac42-c7717d03d3d6_800w.jpg" alt="Новый материал" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                Травертин CLASSIC VEIN CUT
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/fd680790-d2b5-48e0-ab88-55ee03a0b7f0_800w.jpg" alt="Новый материал" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                CALACATTA ORO
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/3e0b3320-7664-423c-8333-780265a02062_800w.jpg" alt="Новый материал" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                Травертин SILVER
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/08ef6bb0-1577-46ac-be53-b6ea31fb1ec6_800w.jpg" alt="Новый материал" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                Травертин STRIATO FILLED HONED
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/099815b5-3751-4ad8-a5bd-5d8dacdcd657_800w.jpg" alt="Новый материал" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                Травертин IVORY
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/475fbe2f-a0c3-4346-912e-06f2d15f05b8_800w.jpg" alt="Новый материал" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                Травертин STRIATO UNFILLED HONED
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/1e8ca7f9-118b-4b47-b767-45be94e26ef3_800w.jpg" alt="Новый материал" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                Traonyx
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/e7e67341-30d1-4657-aa47-cb990cc65f29_800w.jpg" alt="Новый материал" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                Оникс GREY
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/44a0e496-63e4-497b-915c-7ddd1a387d9c_800w.jpg" alt="Новый материал" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                Оникс VERDE
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/0fb8f2e3-6240-4f65-8bf4-c454e4acbcac_800w.jpg" alt="Новый материал" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                Оникс GOLDEN TIGER
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/50423239-7dcf-4476-a0c2-2d3cf584ee84_800w.jpg" alt="Новый материал" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                Оникс TERRA BLUE
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/58ff174b-d04d-4cde-83ee-90806bd8fff2_800w.jpg" alt="Новый материал" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                Оникс WHITE LINES
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/28808e0f-afe7-42d3-9791-1fd727151bbf_800w.jpg" alt="Новый материал" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                Silver Roots
+              </h3>
+            </div>
+            <div class="group">
+              <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
+                <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/43f9db38-8f4f-4f1d-b21e-a7097fd89ca6_800w.jpg" alt="Новый материал" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
+              </div>
+              <h3 class="text-lg font-medium text-zinc-900 uppercase">
+                Травертин Jurassic
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PAGE: PRIVACY POLICY -->
+      </main>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="fixed bottom-0 left-0 w-full bg-zinc-900 text-zinc-300 z-[100] transform translate-y-full transition-transform duration-500 border-t border-zinc-800 shadow-[0_-10px_40px_rgba(0,0,0,0.2)]">
+      <div class="max-w-7xl mx-auto px-6 py-10 min-h-[25vh] flex flex-col justify-center">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          <div class="lg:col-span-8 space-y-4 text-sm md:text-base font-light leading-relaxed">
+            <p>
+              Выбирая «Принять все», Вы соглашаетесь с использованием файлов
+              cookie и
+              <a onclick="route('privacy')" class="underline decoration-zinc-600 underline-offset-4 text-white hover:text-zinc-200 cursor-pointer font-medium transition-colors">
+                политикой в отношении обработки персональных данных
+              </a>
+              на наших сайтах.
+            </p>
+            <p class="text-zinc-400 text-xs md:text-sm">
+              Обработка данных осуществляется для интеграции внешнего контента,
+              интеграции потокового контента, а также статистического анализа
+              данных. Файлы cookie хранятся в Вашем браузере. В настройках
+              браузера Вы можете ограничить или вовсе отключить использование
+              файлов cookie.
+              <a onclick="route('privacy')" class="underline decoration-zinc-700 underline-offset-4 text-zinc-300 hover:text-white cursor-pointer font-medium transition-colors">
+                Подробнее
+              </a>
+            </p>
+          </div>
+
+          <div class="lg:col-span-4 flex flex-col gap-3">
+            <button onclick="acceptAllCookies()" class="w-full bg-white text-zinc-900 font-medium py-3 px-6 rounded-lg hover:bg-zinc-100 transition-colors text-sm">
+              Принять все
+            </button>
+            <button onclick="rejectAllCookies()" class="w-full bg-transparent border border-zinc-700 text-white font-medium py-3 px-6 rounded-lg hover:bg-zinc-800 transition-colors text-sm">
+              Отклонить все
+            </button>
+            <button onclick="toggleCookieSettings()" class="w-full text-zinc-400 hover:text-white font-medium py-2 px-6 rounded-lg transition-colors text-sm underline decoration-zinc-700 underline-offset-4">
+              Настроить cookie
+            </button>
+          </div>
+        </div>
+
+        <!-- Cookie Settings Panel (Hidden by default) -->
+        <div id="cookie-settings" class="hidden mt-8 pt-8 border-t border-zinc-800">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Necessary -->
+            <div class="flex items-start gap-4">
+              <div class="flex-grow">
+                <p class="text-sm font-medium text-white mb-1">Необходимые</p>
+                <p class="text-xs text-zinc-500">
+                  Обеспечивают базовую работу сайта. Не могут быть отключены.
+                </p>
+              </div>
+              <div class="relative inline-flex h-5 w-9 shrink-0 cursor-not-allowed rounded-full border-2 border-transparent bg-emerald-500 opacity-60">
+                <span class="translate-x-4 inline-block h-4 w-4 transform rounded-full bg-white shadow ring-0"></span>
+              </div>
+            </div>
+
+            <!-- Analytics -->
+            <div class="flex items-start gap-4">
+              <div class="flex-grow">
+                <p class="text-sm font-medium text-white mb-1">Аналитические</p>
+                <p class="text-xs text-zinc-500">
+                  Помогают нам улучшать сайт, собирая анонимную статистику
+                  использования.
+                </p>
+              </div>
+              <button id="toggle-analytics" type="button" data-state="off" class="bg-zinc-700 relative inline-flex h-5 w-9 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none" onclick="toggleCookieSwitch(this)">
+                <span class="translate-x-0 pointer-events-none inline-block h-4 w-4 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"></span>
+              </button>
+            </div>
+
+            <!-- Marketing -->
+            <div class="flex items-start gap-4">
+              <div class="flex-grow">
+                <p class="text-sm font-medium text-white mb-1">Маркетинговые</p>
+                <p class="text-xs text-zinc-500">
+                  Используются для персонализации рекламы и интеграции сторонних
+                  сервисов.
+                </p>
+              </div>
+              <button id="toggle-marketing" type="button" data-state="off" class="bg-zinc-700 relative inline-flex h-5 w-9 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none" onclick="toggleCookieSwitch(this)">
+                <span class="translate-x-0 pointer-events-none inline-block h-4 w-4 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"></span>
+              </button>
+            </div>
+          </div>
+
+          <div class="mt-8 flex justify-end">
+            <button onclick="saveCookieSettings()" class="bg-zinc-800 text-white font-medium py-2.5 px-6 rounded-lg hover:bg-zinc-700 transition-colors text-sm border border-zinc-700">
+              Сохранить настройки
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-zinc-100 pt-16 pb-8">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-zinc-400">
+          <p>© 2023 LG Forms. Все права защищены.</p>
+          <div class="flex gap-6">
+            <a onclick="route('privacy')" class="hover:text-zinc-600 cursor-pointer">
+              Политика конфиденциальности
+            </a>
+            <a href="#" class="hover:text-zinc-600 cursor-pointer">Оферта</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Logic Script -->
+    <script>
+      // --- Data ---
+      const products = [
+          {
+              id: 0,
+              name: "Marble Cube",
+              price: "45 000",
+              cat: "Журнальный столик",
+              desc: "Монолитная форма куба раскрывает всю глубину рисунка камня. Идеальная геометрия для современного интерьера, где важна каждая деталь.",
+              specs: [
+                  "Стол из акцентного травертина или мрамора.",
+                  "Столешница 40х40 см, высота 40 см.",
+                  "Полая конструкция с усиленным каркасом."
+              ],
+              images: [
+                  "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
+                  "https://images.unsplash.com/photo-1597072689227-8882273e8f6e?q=80&w=1974&auto=format&fit=crop",
+                  "https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=1932&auto=format&fit=crop"
+              ]
+          },
+          {
+              id: 1,
+              name: "Noir Console",
+              price: "62 000",
+              cat: "Консоль",
+              desc: "Элегантная консоль для прихожей или гостиной. Тонкая столешница визуально облегчает конструкцию, сохраняя монументальность камня.",
+              specs: [
+                  "Натуральный мрамор Nero Marquina.",
+                  "Длина 120 см, глубина 35 см, высота 85 см.",
+                  "Крепление к стене для безопасности."
+              ],
+              images: [
+                  "https://images.unsplash.com/photo-1604578762246-41134e37f9cc?q=80&w=2070&auto=format&fit=crop",
+                  "https://images.unsplash.com/photo-1618220179428-22790b461013?q=80&w=2700&auto=format&fit=crop",
+                  "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=2532&auto=format&fit=crop"
+              ]
+          },
+          {
+              id: 2,
+              name: "Oval Dining",
+              price: "120 000",
+              cat: "Обеденный стол",
+              desc: "Центральный элемент столовой зоны. Плавные линии овала создают атмосферу уюта и располагают к долгим беседам.",
+              specs: [
+                  "Массив белого каррарского мрамора.",
+                  "Размер столешницы 180х90 см.",
+                  "Подстолье: металл в черной порошковой окраске."
+              ],
+              images: [
+                  "https://images.unsplash.com/photo-1595428774223-ef52624120d2?q=80&w=1974&auto=format&fit=crop",
+                  "https://images.unsplash.com/photo-1604061986761-d9d64d2f637d?q=80&w=2670&auto=format&fit=crop",
+                  "https://images.unsplash.com/photo-1617103996702-96ff29b1c467?q=80&w=2532&auto=format&fit=crop"
+              ]
+          },
+          {
+              id: 3,
+              name: "Travertine Low",
+              price: "55 000",
+              cat: "Кофейный столик",
+              desc: "Низкий столик в японском стиле. Теплая текстура травертина добавляет интерьеру природной мягкости.",
+              specs: [
+                  "Бежевый травертин с открытыми порами.",
+                  "Диаметр 80 см, высота 30 см.",
+                  "Обработка 'Honed' (матовая)."
+              ],
+              images: [
+                  "https://images.unsplash.com/photo-1615529182904-14819c35db37?q=80&w=2080&auto=format&fit=crop",
+                  "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=1974&auto=format&fit=crop"
+              ]
+          },
+          {
+              id: 4,
+              name: "Onyx Side",
+              price: "38 000",
+              cat: "Приставной столик",
+              desc: "Маленький шедевр из полупрозрачного оникса. При правильном освещении камень начинает светиться изнутри.",
+              specs: [
+                  "Зеленый оникс (Green Onyx).",
+                  "Высота 50 см, диаметр 35 см.",
+                  "Монолитная полированная колонна."
+              ],
+              images: [
+                  "https://images.unsplash.com/photo-1633505899105-0814ed3015b6?q=80&w=2070&auto=format&fit=crop",
+                  "https://images.unsplash.com/photo-1598300056393-8dd33ec147c2?q=80&w=1974&auto=format&fit=crop"
+              ]
+          },
+          {
+              id: 5,
+              name: "Granite Block",
+              price: "70 000",
+              cat: "Тумба",
+              desc: "Брутальный предмет из черного гранита. Абсолютная надежность и вечная классика.",
+              specs: [
+                  "Гранит Black Galaxy.",
+                  "Размеры 45х45х55 см.",
+                  "Полировка всех видимых граней."
+              ],
+              images: [
+                  "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=1974&auto=format&fit=crop",
+                  "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?q=80&w=2070&auto=format&fit=crop"
+              ]
+          },
+          {
+              id: 6,
+              name: "Carrara Round",
+              price: "85 000",
+              cat: "Обеденный стол",
+              desc: "Классический круглый стол. Идеальное решение для небольших кухонь, где важен стиль и эргономика.",
+              specs: [
+                  "Итальянский мрамор Carrara.",
+                  "Диаметр 100 см, высота 75 см.",
+                  "Коническое основание."
+              ],
+              images: [
+                  "https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?q=80&w=1976&auto=format&fit=crop"
+              ]
+          },
+          {
+              id: 7,
+              name: "Verde Coffee",
+              price: "49 000",
+              cat: "Журнальный столик",
+              desc: "Глубокий зеленый цвет мрамора Verde Guatemala напоминает о густых тропических лесах.",
+              specs: [
+                  "Мрамор Verde Guatemala (Индия).",
+                  "Размер 60х60 см, высота 35 см.",
+                  "Фигурная кромка столешницы."
+              ],
+              images: [
+                  "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?q=80&w=1974&auto=format&fit=crop"
+              ]
+          },
+          {
+              id: 8,
+              name: "Sharp Edge",
+              price: "68 000",
+              cat: "Консоль",
+              desc: "Геометрическая консоль со сложными гранями. Демонстрация мастерства камнеобработки.",
+              specs: [
+                  "Серый гранит или кварцит.",
+                  "Длина 100 см.",
+                  "Скрытая система крепления."
+              ],
+              images: [
+                  "https://images.unsplash.com/photo-1597072689227-8882273e8f6e?q=80&w=1974&auto=format&fit=crop"
+              ]
+          },
+          {
+              id: 9,
+              name: "Monolith Zero",
+              price: "145 000",
+              cat: "Арт-объект",
+              desc: "Больше чем мебель. Скульптура, высеченная из цельного блока камня.",
+              specs: [
+                  "Уникальный слэб кварцита.",
+                  "Индивидуальные размеры.",
+                  "Вес изделия более 150 кг."
+              ],
+              images: [
+                  "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?q=80&w=2070&auto=format&fit=crop"
+              ]
+          }
+      ];
+
+      // --- Init Catalog ---
+      const grid = document.getElementById('catalog-grid');
+      if (grid) {
+          products.forEach(p => {
+              grid.innerHTML += `
+                  <div onclick="openProduct(${p.id})" class="group cursor-pointer">
+                      <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                          <img src="${p.images[0]}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                          <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
+                              от ${p.price} ₽
+                          </div>
+                      </div>
+                      <h3 class="text-base font-medium text-zinc-900">${p.name}</h3>
+                      <p class="text-xs text-zinc-500 mt-1">${p.cat}</p>
+                  </div>
+              `;
+          });
+      }
+
+      // --- Routing Logic ---
+      function route(pageId, anchorId = null) {
+          const currentPath = window.location.pathname;
+          let filename = 'index.html';
+          if (pageId === 'catalog') filename = 'catalog.html';
+          else if (pageId === 'materials') filename = 'materials.html';
+          else if (pageId === 'home') filename = 'index.html';
+          else if (pageId === 'privacy') filename = 'index.html';
+
+          if (currentPath.endsWith('/' + filename) || (filename === 'index.html' && (currentPath.endsWith('/') || currentPath.endsWith('\\') || currentPath.indexOf('.html') === -1))) {
+              if (pageId === 'privacy') {
+                  document.querySelectorAll('.page-section').forEach(el => el.classList.add('hidden'));
+                  document.querySelectorAll('.form-section').forEach(el => el.classList.add('hidden'));
+                  const priv = document.getElementById('privacy-page');
+                  if(priv) priv.classList.remove('hidden');
+                  window.scrollTo(0,0);
+              } else {
+                  document.querySelectorAll('.page-section').forEach(el => el.classList.add('hidden'));
+                  document.querySelectorAll('.form-section').forEach(el => el.classList.remove('hidden'));
+                  
+                  if (pageId === 'home') {
+                      const home = document.getElementById('home-page');
+                      if(home) home.classList.remove('hidden');
+                  } else if (pageId === 'catalog') {
+                      const cat = document.getElementById('catalog-page');
+                      if(cat) cat.classList.remove('hidden');
+                      if (window.history && window.history.pushState) {
+                          window.history.pushState({}, '', window.location.pathname);
+                      }
+                  } else if (pageId === 'materials') {
+                      const mat = document.getElementById('materials-page');
+                      if(mat) mat.classList.remove('hidden');
+                  }
+                  if (anchorId) {
+                      setTimeout(() => {
+                          const el = document.getElementById(anchorId);
+                          if(el) el.scrollIntoView({behavior: 'smooth'});
+                      }, 100);
+                  } else {
+                      window.scrollTo(0, 0);
+                  }
+              }
+          } else {
+              let url = filename;
+              if (pageId === 'privacy') url += '?page=privacy';
+              if (anchorId) url += '#' + anchorId;
+              window.location.href = url;
+          }
+      }
+
+      // --- Product View Logic ---
+      let currentProduct = null;
+      let currentImageIndex = 0;
+
+      function openProduct(id) {
+          const currentPath = window.location.pathname;
+          if (!currentPath.endsWith('catalog.html')) {
+              window.location.href = 'catalog.html?product=' + id;
+              return;
+          }
+          currentProduct = products.find(p => p.id === id);
+          if(!currentProduct) return;
+
+          document.getElementById('p-title').innerText = currentProduct.name;
+          document.getElementById('p-price').innerText = 'от ' + currentProduct.price + ' ₽';
+          document.getElementById('p-desc').innerText = currentProduct.desc;
+
+          const specsContainer = document.getElementById('p-specs');
+          specsContainer.innerHTML = '';
+          currentProduct.specs.forEach(spec => {
+              specsContainer.innerHTML += `
+                  <div class="flex items-start gap-2.5">
+                      <div class="mt-1.5 min-w-[4px] h-[4px] rounded-full bg-zinc-400"></div>
+                      <span>${spec}</span>
+                  </div>
+              `;
+          });
+
+          currentImageIndex = 0;
+          renderImages();
+
+          document.querySelectorAll('.page-section').forEach(el => el.classList.add('hidden'));
+          document.getElementById('product-page').classList.remove('hidden');
+          document.querySelectorAll('.form-section').forEach(el => el.classList.remove('hidden'));
+          window.scrollTo(0, 0);
+      }
+
+      function renderImages() {
+          const mainImg = document.getElementById('p-main-img');
+          mainImg.style.opacity = '0';
+
+          setTimeout(() => {
+              mainImg.src = currentProduct.images[currentImageIndex];
+              mainImg.onload = () => { mainImg.style.opacity = '1'; };
+          }, 150);
+
+          const thumbsContainer = document.getElementById('p-thumbnails');
+          thumbsContainer.innerHTML = '';
+
+          if(currentProduct.images.length > 1) {
+              currentProduct.images.forEach((img, idx) => {
+                  const isActive = idx === currentImageIndex ? 'ring-2 ring-zinc-900' : 'opacity-70 hover:opacity-100';
+                  thumbsContainer.innerHTML += `
+                      <button onclick="setImage(${idx})" class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden border border-zinc-200 ${isActive} transition-all">
+                          <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/c543a9e1-f226-4ced-80b0-feb8445a75b9_1600w.jpg" class="w-full h-full object-cover">
+                      </button>
+                  `;
+              });
+          }
+      }
+
+      function setImage(idx) {
+          currentImageIndex = idx;
+          renderImages();
+      }
+
+      function nextImage() {
+          if(!currentProduct) return;
+          currentImageIndex = (currentImageIndex + 1) % currentProduct.images.length;
+          renderImages();
+      }
+
+      function prevImage() {
+          if(!currentProduct) return;
+          currentImageIndex = (currentImageIndex - 1 + currentProduct.images.length) % currentProduct.images.length;
+          renderImages();
+      }
+
+      // --- Cookie Logic ---
+      document.addEventListener('DOMContentLoaded', () => {
+          const params = new URLSearchParams(window.location.search);
+          const productId = params.get('product');
+          const pageParam = params.get('page');
+          const currentPath = window.location.pathname;
+          
+          if (currentPath.endsWith('catalog.html')) {
+              const cat = document.getElementById('catalog-page');
+              if(cat && !productId) cat.classList.remove('hidden');
+              if (productId !== null) openProduct(parseInt(productId, 10));
+          } else if (currentPath.endsWith('materials.html')) {
+              const mat = document.getElementById('materials-page');
+              if(mat) mat.classList.remove('hidden');
+          } else {
+              if (pageParam === 'privacy') {
+                  route('privacy');
+              } else if (window.location.hash) {
+                  const el = document.getElementById(window.location.hash.substring(1));
+                  if (el) setTimeout(() => el.scrollIntoView({behavior: 'smooth'}), 100);
+              }
+          }
+          const consentStatus = localStorage.getItem('cookieConsent');
+          if (!consentStatus) {
+              setTimeout(() => {
+                  document.getElementById('cookie-banner').classList.remove('translate-y-full');
+              }, 800);
+          }
+      });
+
+      function closeCookieBanner() {
+          document.getElementById('cookie-banner').classList.add('translate-y-full');
+      }
+
+      function acceptAllCookies() {
+          localStorage.setItem('cookieConsent', JSON.stringify({ analytics: true, marketing: true, timestamp: new Date().toISOString() }));
+          closeCookieBanner();
+          console.log('Cookies Accepted: All tracking initialized.');
+      }
+
+      function rejectAllCookies() {
+          localStorage.setItem('cookieConsent', JSON.stringify({ analytics: false, marketing: false, timestamp: new Date().toISOString() }));
+          closeCookieBanner();
+
+          document.cookie.split(";").forEach((c) => {
+              document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
+          });
+          console.log('Cookies Rejected: Only necessary session active.');
+      }
+
+      function toggleCookieSettings() {
+          const settings = document.getElementById('cookie-settings');
+          settings.classList.toggle('hidden');
+      }
+
+      function toggleCookieSwitch(btn) {
+          const span = btn.querySelector('span');
+          const currentState = btn.getAttribute('data-state');
+
+          if (currentState === 'off') {
+              btn.classList.remove('bg-zinc-700');
+              btn.classList.add('bg-emerald-500');
+              span.classList.remove('translate-x-0');
+              span.classList.add('translate-x-4');
+              btn.setAttribute('data-state', 'on');
+          } else {
+              btn.classList.remove('bg-emerald-500');
+              btn.classList.add('bg-zinc-700');
+              span.classList.remove('translate-x-4');
+              span.classList.add('translate-x-0');
+              btn.setAttribute('data-state', 'off');
+          }
+      }
+
+      function saveCookieSettings() {
+          const analyticsOn = document.getElementById('toggle-analytics').getAttribute('data-state') === 'on';
+          const marketingOn = document.getElementById('toggle-marketing').getAttribute('data-state') === 'on';
+
+          localStorage.setItem('cookieConsent', JSON.stringify({
+              analytics: analyticsOn,
+              marketing: marketingOn,
+              timestamp: new Date().toISOString()
+          }));
+
+          if(!analyticsOn && !marketingOn) {
+              document.cookie.split(";").forEach((c) => {
+                  document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
+              });
+          }
+
+          closeCookieBanner();
+          console.log(`Cookies Saved: Analytics [${analyticsOn}], Marketing [${marketingOn}]`);
+      }
+    </script>
+  
+</body></html>
