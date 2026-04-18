@@ -48,38 +48,37 @@
   class="bg-[#FAFAFA] text-zinc-800 antialiased selection:bg-zinc-200 selection:text-zinc-900 flex flex-col min-h-screen">
   <!-- Navigation -->
   <nav class="fixed top-0 w-full z-40 border-b border-zinc-200/60 bg-white/80 backdrop-blur-md">
-    <div class="flex h-16 max-w-7xl mr-auto ml-auto pr-6 pl-6 items-center justify-between">
-      <!-- Updated Logo -->
-      <button onclick="route('home'); window.scrollTo({ top: 0, behavior: 'smooth' });"
-        class="flex items-center hover:opacity-80 transition-opacity focus:outline-none">
-        <img
-          src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/c9cf9a9b-a4f5-400d-bcef-b8793f8b5444_320w.png"
-          alt="LG Forms Logo" class="md:h-10 w-auto h-8 object-contain">
-      </button>
+      <div class="flex h-16 max-w-7xl mr-auto ml-auto pr-6 pl-6 items-center justify-between">
+        <!-- Updated Logo -->
+        <button onclick="route('home'); window.scrollTo({ top: 0, behavior: 'smooth' });" class="flex items-center hover:opacity-80 transition-opacity focus:outline-none">
+          <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/c9cf9a9b-a4f5-400d-bcef-b8793f8b5444_320w.png" alt="LG Forms Logo" class="md:h-10 w-auto h-8 object-contain">
+        </button>
 
-      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-500">
-        <button onclick="route('catalog')" class="hover:text-zinc-900 transition-colors">
-          Коллекция
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-500">
+          <button onclick="route('catalog')" class="hover:text-zinc-900 transition-colors">
+            Коллекция
+          </button>
+          <button onclick="route('materials')" class="hover:text-zinc-900 transition-colors">
+            Материалы
+          </button>
+          <button onclick="route('care')" class="hover:text-zinc-900 transition-colors">
+            Уход за камнем
+          </button>
+          <button onclick="route('home', 'about')" class="hover:text-zinc-900 transition-colors">
+            О нас
+          </button>
+        </div>
+
+        <button onclick="route('home', 'contacts')" class="hidden md:flex items-center gap-2 bg-zinc-900 hover:bg-zinc-800 text-white text-xs font-medium px-4 py-2 rounded-full transition-all">
+          <span>Заказать расчет</span>
+          <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon>
         </button>
-        <button onclick="route('materials')" class="hover:text-zinc-900 transition-colors">
-          Материалы
-        </button>
-        <button onclick="route('home', 'about')" class="hover:text-zinc-900 transition-colors">
-          О нас
+
+        <button class="md:hidden text-zinc-900">
+          <iconify-icon icon="solar:hamburger-menu-linear" width="24"></iconify-icon>
         </button>
       </div>
-
-      <button onclick="route('home', 'contacts')"
-        class="hidden md:flex items-center gap-2 bg-zinc-900 hover:bg-zinc-800 text-white text-xs font-medium px-4 py-2 rounded-full transition-all">
-        <span>Заказать расчет</span>
-        <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon>
-      </button>
-
-      <button class="md:hidden text-zinc-900">
-        <iconify-icon icon="solar:hamburger-menu-linear" width="24"></iconify-icon>
-      </button>
-    </div>
-  </nav>
+    </nav>
 
   <!-- MAIN CONTENT CONTAINER -->
   <main id="app-content" class="flex-grow pt-16">
@@ -192,30 +191,27 @@
 
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div onclick="openProduct(0)" class="group cursor-pointer">
-              <div class="aspect-[4/3] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
-                <img
-                  src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/a068ebb1-ab96-49a3-8efa-ad99bcac5bb1_800w.webp"
+              <div class="aspect-square bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                <img src="фото столиков/balance/1.webp"
                   class="group-hover:scale-105 transition-transform duration-500 w-full h-full object-cover">
               </div>
-              <h3 class="text-lg font-medium text-zinc-900">Balance</h3>
+              <h3 class="text-lg font-medium text-zinc-900">Баланс</h3>
               <p class="text-sm text-zinc-500">Журнальный столик</p>
             </div>
             <div onclick="openProduct(1)" class="group cursor-pointer">
-              <div class="aspect-[4/3] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
-                <img
-                  src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/fbff7256-a4bd-4832-96f1-211f87f4c65e_800w.webp"
+              <div class="aspect-square bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                <img src="фото столиков/ellipse/1.webp"
                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
               </div>
-              <h3 class="text-lg font-medium text-zinc-900">Ellipse</h3>
+              <h3 class="text-lg font-medium text-zinc-900">Эллипс</h3>
               <p class="text-sm text-zinc-500">Журнальный столик</p>
             </div>
             <div onclick="openProduct(2)" class="group cursor-pointer">
-              <div class="aspect-[4/3] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
-                <img
-                  src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/3afe9e11-036e-4dd3-aa5d-b57ff3cb0cb3_800w.webp"
+              <div class="aspect-square bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                <img src="фото столиков/soft lines/нужно/soft lines основная.jpg"
                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
               </div>
-              <h3 class="text-lg font-medium text-zinc-900">Soft Lines</h3>
+              <h3 class="text-lg font-medium text-zinc-900">Канеле</h3>
               <p class="text-sm text-zinc-500">Журнальный столик</p>
             </div>
           </div>
@@ -818,11 +814,12 @@
           </p>
         </div>
 
-        <form id="contact-form" action="https://formsubmit.co/alexvorobej1989@gmail.com" method="POST" class="space-y-5 bg-white p-8 rounded-2xl shadow-sm border border-zinc-100" onsubmit="submitForm(event)">
+        <form id="contact-form" action="https://formsubmit.co/alexvorobej1989@gmail.com" method="POST"
+          class="space-y-5 bg-white p-8 rounded-2xl shadow-sm border border-zinc-100" onsubmit="submitForm(event)">
           <!-- Hidden inputs for FormSubmit -->
           <input type="hidden" name="_subject" value="Новая заявка с сайта LG Forms">
           <input type="hidden" name="_captcha" value="false">
-          
+
           <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div class="space-y-1.5">
               <label class="text-xs font-medium text-zinc-700 ml-1">
@@ -853,8 +850,10 @@
             class="w-full bg-zinc-900 text-white font-medium text-sm py-3 rounded-lg hover:bg-zinc-800 transition-all">
             Отправить
           </button>
-          <div id="form-success" class="hidden text-sm text-emerald-600 text-center mt-3 font-medium">Заявка успешно отправлена!</div>
-          <div id="form-error" class="hidden text-sm text-red-600 text-center mt-3 font-medium">Произошла ошибка. Попробуйте снова.</div>
+          <div id="form-success" class="hidden text-sm text-emerald-600 text-center mt-3 font-medium">Заявка успешно
+            отправлена!</div>
+          <div id="form-error" class="hidden text-sm text-red-600 text-center mt-3 font-medium">Произошла ошибка.
+            Попробуйте снова.</div>
           <p class="text-[10px] text-zinc-400 text-center mt-3">
             Нажимая кнопку, вы соглашаетесь с
             <a onclick="route('privacy')" class="underline hover:text-zinc-600 cursor-pointer">
@@ -991,166 +990,140 @@
   <script>
     // --- Data ---
     const products = [
-      {
-        id: 0,
-        name: "Marble Cube",
-        price: "45 000",
-        cat: "Журнальный столик",
-        desc: "Монолитная форма куба раскрывает всю глубину рисунка камня. Идеальная геометрия для современного интерьера, где важна каждая деталь.",
-        specs: [
-          "Стол из акцентного травертина или мрамора.",
-          "Столешница 40х40 см, высота 40 см.",
-          "Полая конструкция с усиленным каркасом."
-        ],
-        images: [
-          "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-          "https://images.unsplash.com/photo-1597072689227-8882273e8f6e?q=80&w=1974&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=1932&auto=format&fit=crop"
-        ]
-      },
-      {
-        id: 1,
-        name: "Noir Console",
-        price: "62 000",
-        cat: "Консоль",
-        desc: "Элегантная консоль для прихожей или гостиной. Тонкая столешница визуально облегчает конструкцию, сохраняя монументальность камня.",
-        specs: [
-          "Натуральный мрамор Nero Marquina.",
-          "Длина 120 см, глубина 35 см, высота 85 см.",
-          "Крепление к стене для безопасности."
-        ],
-        images: [
-          "https://images.unsplash.com/photo-1604578762246-41134e37f9cc?q=80&w=2070&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1618220179428-22790b461013?q=80&w=2700&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=2532&auto=format&fit=crop"
-        ]
-      },
-      {
-        id: 2,
-        name: "Oval Dining",
-        price: "120 000",
-        cat: "Обеденный стол",
-        desc: "Центральный элемент столовой зоны. Плавные линии овала создают атмосферу уюта и располагают к долгим беседам.",
-        specs: [
-          "Массив белого каррарского мрамора.",
-          "Размер столешницы 180х90 см.",
-          "Подстолье: металл в черной порошковой окраске."
-        ],
-        images: [
-          "https://images.unsplash.com/photo-1595428774223-ef52624120d2?q=80&w=1974&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1604061986761-d9d64d2f637d?q=80&w=2670&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1617103996702-96ff29b1c467?q=80&w=2532&auto=format&fit=crop"
-        ]
-      },
-      {
-        id: 3,
-        name: "Travertine Low",
-        price: "55 000",
-        cat: "Кофейный столик",
-        desc: "Низкий столик в японском стиле. Теплая текстура травертина добавляет интерьеру природной мягкости.",
-        specs: [
-          "Бежевый травертин с открытыми порами.",
-          "Диаметр 80 см, высота 30 см.",
-          "Обработка 'Honed' (матовая)."
-        ],
-        images: [
-          "https://images.unsplash.com/photo-1615529182904-14819c35db37?q=80&w=2080&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=1974&auto=format&fit=crop"
-        ]
-      },
-      {
-        id: 4,
-        name: "Onyx Side",
-        price: "38 000",
-        cat: "Приставной столик",
-        desc: "Маленький шедевр из полупрозрачного оникса. При правильном освещении камень начинает светиться изнутри.",
-        specs: [
-          "Зеленый оникс (Green Onyx).",
-          "Высота 50 см, диаметр 35 см.",
-          "Монолитная полированная колонна."
-        ],
-        images: [
-          "https://images.unsplash.com/photo-1633505899105-0814ed3015b6?q=80&w=2070&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1598300056393-8dd33ec147c2?q=80&w=1974&auto=format&fit=crop"
-        ]
-      },
-      {
-        id: 5,
-        name: "Granite Block",
-        price: "70 000",
-        cat: "Тумба",
-        desc: "Брутальный предмет из черного гранита. Абсолютная надежность и вечная классика.",
-        specs: [
-          "Гранит Black Galaxy.",
-          "Размеры 45х45х55 см.",
-          "Полировка всех видимых граней."
-        ],
-        images: [
-          "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=1974&auto=format&fit=crop",
-          "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?q=80&w=2070&auto=format&fit=crop"
-        ]
-      },
-      {
-        id: 6,
-        name: "Carrara Round",
-        price: "85 000",
-        cat: "Обеденный стол",
-        desc: "Классический круглый стол. Идеальное решение для небольших кухонь, где важен стиль и эргономика.",
-        specs: [
-          "Итальянский мрамор Carrara.",
-          "Диаметр 100 см, высота 75 см.",
-          "Коническое основание."
-        ],
-        images: [
-          "https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?q=80&w=1976&auto=format&fit=crop"
-        ]
-      },
-      {
-        id: 7,
-        name: "Verde Coffee",
-        price: "49 000",
-        cat: "Журнальный столик",
-        desc: "Глубокий зеленый цвет мрамора Verde Guatemala напоминает о густых тропических лесах.",
-        specs: [
-          "Мрамор Verde Guatemala (Индия).",
-          "Размер 60х60 см, высота 35 см.",
-          "Фигурная кромка столешницы."
-        ],
-        images: [
-          "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?q=80&w=1974&auto=format&fit=crop"
-        ]
-      },
-      {
-        id: 8,
-        name: "Sharp Edge",
-        price: "68 000",
-        cat: "Консоль",
-        desc: "Геометрическая консоль со сложными гранями. Демонстрация мастерства камнеобработки.",
-        specs: [
-          "Серый гранит или кварцит.",
-          "Длина 100 см.",
-          "Скрытая система крепления."
-        ],
-        images: [
-          "https://images.unsplash.com/photo-1597072689227-8882273e8f6e?q=80&w=1974&auto=format&fit=crop"
-        ]
-      },
-      {
-        id: 9,
-        name: "Monolith Zero",
-        price: "145 000",
-        cat: "Арт-объект",
-        desc: "Больше чем мебель. Скульптура, высеченная из цельного блока камня.",
-        specs: [
-          "Уникальный слэб кварцита.",
-          "Индивидуальные размеры.",
-          "Вес изделия более 150 кг."
-        ],
-        images: [
-          "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?q=80&w=2070&auto=format&fit=crop"
-        ]
-      }
-    ];
+          {
+              id: 0,
+              name: "Баланс",
+              price: "135 000",
+              cat: "Журнальный столик",
+              desc: "Идеальный баланс формы и содержания. Фундаментальность натурального камня создает надежную опору, а лаконичная геометрия привносит в интерьер ощущение абсолютной гармонии. Эта модель безупречно смотрится в любом исполнении — от теплого светлого травертина и глубокого Nero Marquina до харизматичной Calacatta Viola.",
+              specs: [
+                  "Доступные материалы: травертин, мрамор (от светлых до редких темных пород).",
+                  "Высота: 50 или 60 см, диаметр: 45 см.",
+                  "Срок изготовления: от 30 дней."
+              ],
+              images: [
+                  "фото столиков/balance/1.webp",
+                  "фото столиков/balance/2.webp",
+                  "фото столиков/balance/3.webp",
+                  "фото столиков/balance/4.webp",
+                  "фото столиков/balance/5.webp"
+              ]
+          },
+          {
+              id: 1,
+              name: "Эллипс",
+              price: "165 000",
+              cat: "Журнальный столик",
+              desc: "Монументальность и элегантность в едином силуэте. Лаконичная овальная форма раскрывает всю глубину и красоту эффектного мрамора, становясь главным акцентом пространства. Особенность модели — уникальная обработка столешницы «под кожу», которая дарит неповторимые тактильные ощущения.",
+              specs: [
+                  "Уникальная фактура: обработка поверхности «под кожу» (Leather finish).",
+                  "Размер столешницы: 90х50 см, высота: 37 см.",
+                  "Срок изготовления: от 30 дней."
+              ],
+              images: [
+                  "фото столиков/ellipse/1.webp",
+                  "фото столиков/ellipse/2.webp",
+                  "фото столиков/ellipse/3.webp",
+                  "фото столиков/ellipse/4.webp",
+                  "фото столиков/ellipse/5.webp"
+              ]
+          },
+          {
+              id: 2,
+              name: "Канеле",
+              price: "135 000",
+              cat: "Журнальный столик",
+              desc: "Воплощение уюта и визуальной мягкости. Утолщенная столешница и широкие рифленые линии основания создают неповторимую, «теплую» геометрию. Модель словно излучает спокойствие, а идеальным спутником для нее станет светлый травертин, подчеркивающий домашнюю эстетику.",
+              specs: [
+                  "Рекомендуемый материал: светлый травертин.",
+                  "Диаметр столешницы: 40 см, высота: 50 см.",
+                  "Срок изготовления: от 30 дней."
+              ],
+              images: [
+                  "фото столиков/soft lines/нужно/soft lines основная.jpg",
+                  "фото столиков/soft lines/нужно/2.jpg",
+                  "фото столиков/soft lines/нужно/3.jpg",
+                  "фото столиков/soft lines/нужно/4.jpg",
+                  "фото столиков/soft lines/нужно/5.png",
+                  "фото столиков/soft lines/нужно/6.png"
+              ]
+          },
+          {
+              id: 3,
+              name: "Фунге",
+              price: "145 000",
+              cat: "Журнальный столик",
+              desc: "Дизайн, вдохновленный природой. Необычная форма основания и круглая столешница образуют идеальный союз монументальности и легкости. Яркий акцентный травертин с выраженным рисунком делает каждый столик уникальным произведением искусства в вашем интерьере.",
+              specs: [
+                  "Доступные материалы: акцентный травертин или мрамор.",
+                  "Диаметр столешницы: 40 см, высота: 40 см.",
+                  "Срок изготовления: от 30 дней."
+              ],
+              images: [
+                  "фото столиков/funge/1.webp",
+                  "фото столиков/funge/2.webp",
+                  "фото столиков/funge/3.webp",
+                  "фото столиков/funge/4.webp"
+              ]
+          },
+          {
+              id: 4,
+              name: "Фунге Нотте",
+              price: "190 000",
+              cat: "Журнальный столик",
+              desc: "Днём — это лаконичная классика, ночью — настоящая магия. Мягкая внутренняя подсветка полупрозрачного оникса превращает основание в источник теплого свечения, визуально растворяя ножку в темноте. Каменная шляпка словно парит в воздухе, наполняя интерьер завораживающей атмосферой заката.",
+              specs: [
+                  "Материал: натуральный полупрозрачный оникс с внутренней подсветкой.",
+                  "Диаметр столешницы: 40 см, высота: 50 см.",
+                  "Работа от встроенного аккумулятора или сети.",
+                  "Срок изготовления: от 30 дней."
+              ],
+              images: [
+                  "фото столиков/funge notte/1.webp",
+                  "фото столиков/funge notte/2.webp",
+                  "фото столиков/funge notte/3.webp",
+                  "фото столиков/funge notte/4.webp",
+                  "фото столиков/funge notte/5.webp"
+              ]
+          },
+          {
+              id: 5,
+              name: "Вольта",
+              price: "230 000",
+              cat: "Журнальный столик",
+              desc: "Один плавный изгиб. Камень послушно следует за линией, не сопротивляясь. Как римская арка — лёгкая, но прочная. Там, где форма делает поворот, рождается красота.",
+              specs: [
+                  "Материал: натуральный травертин.",
+                  "Диаметр столешницы: 65 см, высота: 45 см.",
+                  "Срок изготовления: от 30 дней."
+              ],
+              images: [
+                  "фото столиков/volta/1.webp",
+                  "фото столиков/volta/2.webp",
+                  "фото столиков/volta/3.webp",
+                  "фото столиков/volta/4.webp"
+              ]
+          },
+          {
+              id: 6,
+              name: "Лимо",
+              price: "150 000",
+              cat: "Журнальный столик",
+              desc: "Вдохновлен античной архитектурой, но создан для современного пространства. Рельефное основание с мерными каннелюрами играет со светом и тенью, превращая камень в тактильное удовольствие. Классическая колонна, переосмысленная в функциональный и выразительный предмет искусства.",
+              specs: [
+                  "Доступные материалы: травертин или мрамор.",
+                  "Диаметр столешницы: 40 см, высота: 50 см.",
+                  "Срок изготовления: от 30 дней."
+              ],
+              images: [
+                  "фото столиков/limo/1.webp",
+                  "фото столиков/limo/2.webp",
+                  "фото столиков/limo/3.webp",
+                  "фото столиков/limo/4.webp",
+                  "фото столиков/limo/5.webp"
+              ]
+          }
+      ];
 
     // --- Init Catalog ---
     const grid = document.getElementById('catalog-grid');
@@ -1158,7 +1131,7 @@
       products.forEach(p => {
         grid.innerHTML += `
                   <div onclick="openProduct(${p.id})" class="group cursor-pointer">
-                      <div class="aspect-[4/5] bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
+                      <div class="aspect-square bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
                           <img src="${p.images[0]}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                           <div class="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-lg text-xs font-medium text-zinc-900 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">
                               от ${p.price} ₽
@@ -1177,6 +1150,7 @@
       let filename = 'index.html';
       if (pageId === 'catalog') filename = 'catalog.html';
       else if (pageId === 'materials') filename = 'materials.html';
+      else if (pageId === 'care') filename = 'care.html';
       else if (pageId === 'home') filename = 'index.html';
       else if (pageId === 'privacy') filename = 'index.html';
 
@@ -1265,7 +1239,7 @@
           const isActive = idx === currentImageIndex ? 'ring-2 ring-zinc-900' : 'opacity-70 hover:opacity-100';
           thumbsContainer.innerHTML += `
                       <button onclick="setImage(${idx})" class="flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden border border-zinc-200 ${isActive} transition-all">
-                          <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/c543a9e1-f226-4ced-80b0-feb8445a75b9_1600w.jpg" class="w-full h-full object-cover">
+                          <img src="${img}" class="w-full h-full object-cover pointer-events-none">
                       </button>
                   `;
         });
@@ -1303,6 +1277,9 @@
       } else if (currentPath.endsWith('materials.html')) {
         const mat = document.getElementById('materials-page');
         if (mat) mat.classList.remove('hidden');
+      } else if (currentPath.endsWith('care.html')) {
+        const care = document.getElementById('care-page');
+        if (care) care.classList.remove('hidden');
       } else {
         if (pageParam === 'privacy') {
           route('privacy');
@@ -1390,21 +1367,21 @@
       const formData = new FormData(form);
       const btn = form.querySelector('button[type="submit"]');
       const originalText = btn.innerText;
-      
+
       btn.innerText = 'Отправка...';
       btn.disabled = true;
       document.getElementById('form-success').classList.add('hidden');
       document.getElementById('form-error').classList.add('hidden');
 
       fetch("https://formsubmit.co/ajax/alexvorobej1989@gmail.com", {
-          method: "POST",
-          headers: { 
-              'Accept': 'application/json'
-          },
-          body: formData
+        method: "POST",
+        headers: {
+          'Accept': 'application/json'
+        },
+        body: formData
       })
-      .then(response => response.json())
-      .then(data => {
+        .then(response => response.json())
+        .then(data => {
           if (data.success) {
             document.getElementById('form-success').classList.remove('hidden');
             form.reset();
@@ -1415,16 +1392,42 @@
             form.onsubmit = null; // Remove standard submit blocking
             form.submit();        // Fallback to HTML submit
           }
-      })
-      .catch(error => {
+        })
+        .catch(error => {
           console.error('Fetch Error:', error);
           // Ошибка может быть из-за CORS при локальном открытии (file://) 
           // или из-за необходимости первой активации.
           // Переключаемся на стандартную отправку формы.
-          form.onsubmit = null; 
+          form.onsubmit = null;
           form.submit();
-      });
+        });
     }
+  
+      // --- Share Product Logic ---
+      function shareProduct(btnElement) {
+          if (!currentProduct) return;
+          const url = window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '/catalog.html') + '?product=' + currentProduct.id;
+          
+          if (navigator.share) {
+              navigator.share({
+                  title: currentProduct.name + ' - LG Forms',
+                  text: currentProduct.desc,
+                  url: url
+              }).catch((e) => console.log('Share error:', e));
+          } else {
+              navigator.clipboard.writeText(url).then(() => {
+                  const span = btnElement.querySelector('span');
+                  const originalText = span.innerText;
+                  span.innerText = 'Ссылка скопирована!';
+                  btnElement.classList.add('bg-emerald-50', 'border-emerald-200', 'text-emerald-700');
+                  setTimeout(() => {
+                      span.innerText = originalText;
+                      btnElement.classList.remove('bg-emerald-50', 'border-emerald-200', 'text-emerald-700');
+                  }, 2000);
+              });
+          }
+      }
+
   </script>
 
 </body>

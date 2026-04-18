@@ -51,50 +51,388 @@
 
     <!-- MAIN CONTENT CONTAINER -->
     <main id="app-content" class="flex-grow pt-16">
-      <!-- PAGE: HOME -->
-      <div id="materials-page" class="page-section hidden fade-in min-h-screen bg-white pb-20">
-        <div class="pt-12 pb-8 border-b border-zinc-100 bg-white">
-          <div class="max-w-7xl mx-auto px-6">
-            <div class="flex items-center gap-2 text-xs text-zinc-400 mb-4">
-              <button onclick="route('home')" class="hover:text-zinc-900 transition-colors">
-                Главная
-              </button>
-              <span>/</span>
-              <span class="text-zinc-900">Материалы</span>
+    <!-- PAGE: CARE -->
+    <div id="care-page" class="page-section hidden fade-in min-h-screen bg-white">
+      <div class="pt-12 pb-8 border-b border-zinc-100 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="flex items-center gap-2 text-xs text-zinc-400 mb-4">
+            <button onclick="route('home')" class="hover:text-zinc-900">
+              Главная
+            </button>
+            <span>/</span>
+            <span class="text-zinc-900">Уход за камнем</span>
+          </div>
+          <h1 class="text-3xl md:text-4xl font-medium tracking-tight text-zinc-900 mb-4">
+            Уход за камнем
+          </h1>
+          <p class="text-lg text-zinc-500 max-w-2xl font-light">
+            Натуральный камень — живой материал. Он дышит, меняется, стареет с достоинством. Это не недостаток, а его главная красота. Но у него есть характер. Понимая его, вы сохраните красоту столика на десятилетия.
+          </p>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-6 py-16 space-y-24">
+        
+        <!-- SECTION: Rules Infographics -->
+        <section>
+          <h2 class="text-2xl font-medium tracking-tight text-zinc-900 mb-8">Общие правила для всех камней</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- DOs -->
+            <div class="bg-emerald-50/50 border border-emerald-100 rounded-2xl p-8 outline outline-offset-2 outline-emerald-50">
+              <div class="flex items-center gap-3 mb-6">
+                <div class="bg-emerald-100 text-emerald-600 rounded-full w-10 h-10 flex items-center justify-center">
+                  <iconify-icon icon="solar:check-circle-bold" width="24"></iconify-icon>
+                </div>
+                <h3 class="text-lg font-semibold text-emerald-900">Что делать (МОЖНО)</h3>
+              </div>
+              <ul class="space-y-4 text-emerald-800 text-sm">
+                <li class="flex items-start gap-3">
+                  <iconify-icon icon="solar:check-read-linear" width="20" class="shrink-0 mt-0.5 text-emerald-500"></iconify-icon>
+                  <span>Протирать мягкой влажной тканью</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <iconify-icon icon="solar:check-read-linear" width="20" class="shrink-0 mt-0.5 text-emerald-500"></iconify-icon>
+                  <span>Использовать нейтральное мыло (pH 7)</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <iconify-icon icon="solar:check-read-linear" width="20" class="shrink-0 mt-0.5 text-emerald-500"></iconify-icon>
+                  <span>Сразу вытирать пролитое</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <iconify-icon icon="solar:check-read-linear" width="20" class="shrink-0 mt-0.5 text-emerald-500"></iconify-icon>
+                  <span>Использовать подставки под горячее</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <iconify-icon icon="solar:check-read-linear" width="20" class="shrink-0 mt-0.5 text-emerald-500"></iconify-icon>
+                  <span>Раз в 1-2 года обновлять защитную пропитку</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <iconify-icon icon="solar:check-read-linear" width="20" class="shrink-0 mt-0.5 text-emerald-500"></iconify-icon>
+                  <span>Любоваться уникальным рисунком</span>
+                </li>
+              </ul>
             </div>
-            <h1 class="text-3xl font-medium tracking-tight text-zinc-900 mb-2">
-              Образцы камня
-            </h1>
-            <p class="text-zinc-500">
-              Популярные виды натурального камня для ваших проектов.
+            
+            <!-- DONTs -->
+            <div class="bg-red-50/50 border border-red-100 rounded-2xl p-8 outline outline-offset-2 outline-red-50">
+              <div class="flex items-center gap-3 mb-6">
+                <div class="bg-red-100 text-red-600 rounded-full w-10 h-10 flex items-center justify-center">
+                  <iconify-icon icon="solar:close-circle-bold" width="24"></iconify-icon>
+                </div>
+                <h3 class="text-lg font-semibold text-red-900">Чего избегать (НЕЛЬЗЯ)</h3>
+              </div>
+              <ul class="space-y-4 text-red-800 text-sm">
+                <li class="flex items-start gap-3">
+                  <iconify-icon icon="solar:close-square-linear" width="20" class="shrink-0 mt-0.5 text-red-500"></iconify-icon>
+                  <span>Кислоты (вино, лимон, уксус, сок, кофе) оставить надолго</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <iconify-icon icon="solar:close-square-linear" width="20" class="shrink-0 mt-0.5 text-red-500"></iconify-icon>
+                  <span>Абразивные порошки и жёсткие губки</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <iconify-icon icon="solar:close-square-linear" width="20" class="shrink-0 mt-0.5 text-red-500"></iconify-icon>
+                  <span>Кислородные отбеливатели, «Cillit», «Mr. Muscle»</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <iconify-icon icon="solar:close-square-linear" width="20" class="shrink-0 mt-0.5 text-red-500"></iconify-icon>
+                  <span>Оставлять лужи влаги на ночь</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <iconify-icon icon="solar:close-square-linear" width="20" class="shrink-0 mt-0.5 text-red-500"></iconify-icon>
+                  <span>Ставить горячую кружку прямо на камень</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <iconify-icon icon="solar:close-square-linear" width="20" class="shrink-0 mt-0.5 text-red-500"></iconify-icon>
+                  <span>Пытаться оттереть пятно спиртом или ацетоном</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION: By Stone Types -->
+        <section>
+          <h2 class="text-2xl font-medium tracking-tight text-zinc-900 mb-8">По видам камня</h2>
+          <div class="space-y-8">
+            
+            <!-- Marble -->
+            <div class="bg-zinc-50 border border-zinc-100 rounded-2xl p-6 md:p-8">
+              <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/3">
+                  <h3 class="text-xl font-semibold text-zinc-900 mb-2">Мрамор</h3>
+                  <p class="text-xs text-zinc-500 uppercase tracking-widest font-medium mb-4">Самый нежный. Самый выразительный.</p>
+                  <div class="flex items-center gap-2 text-amber-600 bg-amber-50 px-3 py-1.5 rounded-lg text-xs font-semibold w-fit">
+                    <iconify-icon icon="solar:danger-triangle-bold"></iconify-icon>Требует внимания
+                  </div>
+                </div>
+                <div class="md:w-2/3 space-y-6">
+                  <div>
+                    <h4 class="text-sm font-semibold text-zinc-900 mb-2">Особенности</h4>
+                    <p class="text-sm text-zinc-600 font-light leading-relaxed">Метаморфическая порода, состоящая в основном из кальцита. Боится кислот. Красное вино, лимонный сок, кофе, томатный соус — всё это оставляет следы. Пятна въедаются быстро, удаляются сложно.</p>
+                  </div>
+                  <div>
+                    <h4 class="text-sm font-semibold text-zinc-900 mb-2">Что нужно знать</h4>
+                    <p class="text-sm text-zinc-600 font-light leading-relaxed">
+                      Если вы пролили вино — вытирайте сразу. Даже пара минут может оставить след. Это не брак, это природа камня. Со временем на светлом мраморе может проявиться «патина» — естественное старение, которое ценители считают благородством.<br><br>
+                      <strong>Важно:</strong> Мрамор — идеален для журнальных столиков, консолей и тумб, если вы аккуратны.
+                    </p>
+                  </div>
+                  <div class="border-t border-zinc-200 pt-4 mt-6">
+                    <h4 class="text-sm font-semibold text-zinc-900 mb-3">Уход:</h4>
+                    <ul class="text-sm text-zinc-600 font-light space-y-2 list-disc list-inside">
+                      <li>Только мягкая ткань и вода.</li>
+                      <li>Для ежедневной очистки — спец. средство для мрамора (pH 7).</li>
+                      <li>От пятен — специальная паста-кашица.</li>
+                      <li>Раз в год — обработка защитной пропиткой (олигофобный состав).</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Travertine -->
+            <div class="bg-zinc-50 border border-zinc-100 rounded-2xl p-6 md:p-8">
+              <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/3">
+                  <h3 class="text-xl font-semibold text-zinc-900 mb-2">Травертин</h3>
+                  <p class="text-xs text-zinc-500 uppercase tracking-widest font-medium mb-4">Итальянская классика. Пористый, тёплый.</p>
+                  <div class="flex items-center gap-2 text-amber-600 bg-amber-50 px-3 py-1.5 rounded-lg text-xs font-semibold w-fit">
+                    <iconify-icon icon="solar:danger-triangle-bold"></iconify-icon>Мягкий
+                  </div>
+                </div>
+                <div class="md:w-2/3 space-y-6">
+                  <div>
+                    <h4 class="text-sm font-semibold text-zinc-900 mb-2">Особенности</h4>
+                    <p class="text-sm text-zinc-600 font-light leading-relaxed">Родственник мрамора, тоже кальцитовый камень. Боится кислот. Главная особенность — пористость. Открытые поры впитывают влагу быстрее гладкого мрамора. Соки и кофе — мгновенная угроза.</p>
+                  </div>
+                  <div>
+                    <h4 class="text-sm font-semibold text-zinc-900 mb-2">Что нужно знать</h4>
+                    <p class="text-sm text-zinc-600 font-light leading-relaxed">
+                      Наши столики обработаны защитным составом, но это не делает камень «неубиваемым». Если пролить вино и не вытереть — пятно останется. Многие клиенты считают, что это добавляет столу "души" (диалог с материалом).<br><br>
+                      <strong>Важно:</strong> Если вы цените живую фактуру и готовы к диалогу — он полюбит вас в ответ.
+                    </p>
+                  </div>
+                  <div class="border-t border-zinc-200 pt-4 mt-6">
+                    <h4 class="text-sm font-semibold text-zinc-900 mb-3">Уход:</h4>
+                    <ul class="text-sm text-zinc-600 font-light space-y-2 list-disc list-inside">
+                      <li>Сразу вытирать жидкости.</li>
+                      <li>Не использовать горячий пар (загонит грязь в поры).</li>
+                      <li>Мыть только мягкой тканью.</li>
+                      <li>Раз в 1-2 года — <strong>обязательно</strong> обновлять пропитку.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Onyx -->
+            <div class="bg-zinc-50 border border-zinc-100 rounded-2xl p-6 md:p-8">
+              <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/3">
+                  <h3 class="text-xl font-semibold text-zinc-900 mb-2">Оникс</h3>
+                  <p class="text-xs text-zinc-500 uppercase tracking-widest font-medium mb-4">Для подсветки — магия. Драгоценный.</p>
+                  <div class="flex items-center gap-2 text-rose-600 bg-rose-50 px-3 py-1.5 rounded-lg text-xs font-semibold w-fit">
+                    <iconify-icon icon="solar:shield-warning-bold"></iconify-icon>Хрупкий и чувствительный
+                  </div>
+                </div>
+                <div class="md:w-2/3 space-y-6">
+                  <div>
+                    <h4 class="text-sm font-semibold text-zinc-900 mb-2">Особенности</h4>
+                    <p class="text-sm text-zinc-600 font-light leading-relaxed">Самый капризный. Мягкий, хрупкий, сверхчувствительный к кислотам. Его ценность — уникальный рисунок и полупрозрачность. За эту красоту нужно платить вниманием.</p>
+                  </div>
+                  <div>
+                    <h4 class="text-sm font-semibold text-zinc-900 mb-2">Что нужно знать</h4>
+                    <p class="text-sm text-zinc-600 font-light leading-relaxed">
+                      Камень для созерцания, а не для активного использования. Берегите от всего: высоких температур, ударов, кислот. Подсветка подчеркнет как магический рисунок, так и любое пятно.<br><br>
+                      <strong>Важно:</strong> Это инвестиция в красоту. Когда включается подсветка, вы понимаете, почему это того стоило.
+                    </p>
+                  </div>
+                  <div class="border-t border-zinc-200 pt-4 mt-6">
+                    <h4 class="text-sm font-semibold text-zinc-900 mb-3">Уход:</h4>
+                    <ul class="text-sm text-zinc-600 font-light space-y-2 list-disc list-inside">
+                      <li>Только сухая или едва влажная мягкая ткань.</li>
+                      <li>Никаких кислот, спирта, растворителей или абразивов.</li>
+                      <li>Хранить подальше от прямых солнечных лучей (может выцвести).</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quartzite & Granite row -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <!-- Quartzite -->
+              <div class="bg-zinc-50 border border-zinc-100 rounded-2xl p-6 md:p-8">
+                <h3 class="text-xl font-semibold text-zinc-900 mb-2">Кварцит</h3>
+                <p class="text-xs text-zinc-500 uppercase tracking-widest font-medium mb-4">Прочный, как гранит. Красивый, как мрамор.</p>
+                <div class="flex items-center gap-2 text-emerald-600 bg-emerald-50 px-3 py-1.5 rounded-lg text-xs font-semibold w-fit mb-6">
+                  <iconify-icon icon="solar:shield-check-bold"></iconify-icon>Почти неубиваемый
+                </div>
+                <div class="space-y-4 text-sm text-zinc-600 font-light leading-relaxed">
+                  <p>Метаморфическая порода на основе кварца. Не боится кислот. Прощает мелкие ошибки. Лучший выбор, если вам нужна <strong>красота без паники</strong>.</p>
+                  <p>Уход: мягкая ткань, нейтральное мыло. Защитная пропитка: желательно обновлять раз в 2 года.</p>
+                </div>
+              </div>
+
+              <!-- Granite -->
+              <div class="bg-zinc-50 border border-zinc-100 rounded-2xl p-6 md:p-8">
+                <h3 class="text-xl font-semibold text-zinc-900 mb-2">Гранит</h3>
+                <p class="text-xs text-zinc-500 uppercase tracking-widest font-medium mb-4">Абсолютная классика. Самый прочный.</p>
+                <div class="flex items-center gap-2 text-emerald-600 bg-emerald-50 px-3 py-1.5 rounded-lg text-xs font-semibold w-fit mb-6">
+                  <iconify-icon icon="solar:shield-check-bold"></iconify-icon>Надёжность
+                </div>
+                <div class="space-y-4 text-sm text-zinc-600 font-light leading-relaxed">
+                  <p>Магматическая порода. Камень для тех, кто хочет "забыть про уход". Не впитывает жидкости мгновенно (но вытирать вино всё же стоит). Минус — менее выразительная текстура.</p>
+                  <p>Уход: мыло в небольшом количестве, мягкая ткань. Пропитка: по желанию.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- SECTION: Comparison Table -->
+        <section>
+          <h2 class="text-2xl font-medium tracking-tight text-zinc-900 mb-8">Сравнительная таблица (выбор)</h2>
+          <div class="overflow-x-auto rounded-xl border border-zinc-200">
+            <table class="w-full text-left text-sm text-zinc-600">
+              <thead class="bg-zinc-50 text-xs uppercase text-zinc-500 font-semibold border-b border-zinc-200">
+                <tr>
+                  <th class="px-6 py-4">Камень</th>
+                  <th class="px-6 py-4">Боится кислот</th>
+                  <th class="px-6 py-4">Легко царапается</th>
+                  <th class="px-6 py-4">Требует пропитки</th>
+                  <th class="px-6 py-4">Для кого</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-zinc-200 bg-white">
+                <tr class="hover:bg-zinc-50/50 transition-colors">
+                  <td class="px-6 py-4 font-medium text-zinc-900">Мрамор</td>
+                  <td class="px-6 py-4"><span class="text-amber-500">⚠️ Очень</span></td>
+                  <td class="px-6 py-4"><span class="text-amber-500">⚠️ Да</span></td>
+                  <td class="px-6 py-4"><span class="text-emerald-500">✅ Да</span></td>
+                  <td class="px-6 py-4">Ценителей, готовых ухаживать</td>
+                </tr>
+                <tr class="hover:bg-zinc-50/50 transition-colors">
+                  <td class="px-6 py-4 font-medium text-zinc-900">Травертин</td>
+                  <td class="px-6 py-4"><span class="text-amber-500">⚠️ Очень</span></td>
+                  <td class="px-6 py-4"><span class="text-amber-500">⚠️ Да (мягкий)</span></td>
+                  <td class="px-6 py-4"><span class="text-emerald-500">✅ Обязательно</span></td>
+                  <td class="px-6 py-4">Любителей фактуры и стиля</td>
+                </tr>
+                <tr class="hover:bg-zinc-50/50 transition-colors">
+                  <td class="px-6 py-4 font-medium text-zinc-900">Оникс</td>
+                  <td class="px-6 py-4"><span class="text-amber-500">⚠️ Очень</span></td>
+                  <td class="px-6 py-4"><span class="text-amber-500">⚠️ Да</span></td>
+                  <td class="px-6 py-4"><span class="text-emerald-500">✅ Да</span></td>
+                  <td class="px-6 py-4">Коллекционеров (для подсветки)</td>
+                </tr>
+                <tr class="hover:bg-zinc-50/50 transition-colors">
+                  <td class="px-6 py-4 font-medium text-zinc-900">Кварцит</td>
+                  <td class="px-6 py-4"><span class="text-emerald-500">✅ Почти нет</span></td>
+                  <td class="px-6 py-4"><span class="text-emerald-500">✅ Нет</span></td>
+                  <td class="px-6 py-4"><span class="text-amber-500">⚠️ Желательно</span></td>
+                  <td class="px-6 py-4">Хочет красоту без паники</td>
+                </tr>
+                <tr class="hover:bg-zinc-50/50 transition-colors">
+                  <td class="px-6 py-4 font-medium text-zinc-900">Гранит</td>
+                  <td class="px-6 py-4"><span class="text-emerald-500">✅ Нет</span></td>
+                  <td class="px-6 py-4"><span class="text-emerald-500">✅ Нет</span></td>
+                  <td class="px-6 py-4"><span class="text-amber-500">⚠️ По желанию</span></td>
+                  <td class="px-6 py-4">Прагматиков, выбирающих надёжность</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- SECTION: FAQ Layout -->
+        <section class="max-w-4xl">
+          <h2 class="text-2xl font-medium tracking-tight text-zinc-900 mb-8">Частые вопросы (FAQ)</h2>
+          <div class="space-y-4">
+            
+            <details class="group bg-white border border-zinc-200 rounded-xl max-w-full [&_summary::-webkit-details-marker]:hidden">
+              <summary class="flex cursor-pointer items-center justify-between gap-1.5 px-6 py-4 text-zinc-900">
+                <h2 class="font-medium">У меня мраморный столик. Я пролил красное вино и сразу вытер. Пятно осталось. Почему?</h2>
+                <span class="shrink-0 rounded-full bg-zinc-100 p-2 sm:p-2 group-open:-rotate-180 transition-transform duration-300">
+                  <iconify-icon icon="solar:alt-arrow-down-linear"></iconify-icon>
+                </span>
+              </summary>
+              <div class="px-6 py-4 border-t border-zinc-100 text-sm text-zinc-600 font-light leading-relaxed">
+                Даже пара минут могут быть критическими для агрессивных кислот вроде вина. Если пятно осталось — не паникуйте. Сделайте кашицу из пищевой соды и воды, нанесите на пятно на 10-15 минут, затем смойте. Если пятно сильное, потребуется профессиональная чистящая паста для мрамора.
+              </div>
+            </details>
+
+            <details class="group bg-white border border-zinc-200 rounded-xl max-w-full [&_summary::-webkit-details-marker]:hidden">
+              <summary class="flex cursor-pointer items-center justify-between gap-1.5 px-6 py-4 text-zinc-900">
+                <h2 class="font-medium">Нужно ли обрабатывать камень сразу после покупки?</h2>
+                <span class="shrink-0 rounded-full bg-zinc-100 p-2 sm:p-2 group-open:-rotate-180 transition-transform duration-300">
+                  <iconify-icon icon="solar:alt-arrow-down-linear"></iconify-icon>
+                </span>
+              </summary>
+              <div class="px-6 py-4 border-t border-zinc-100 text-sm text-zinc-600 font-light leading-relaxed">
+                Все наши столики поставляются с заводской защитной обработкой премиум-уровня. Но она работает 1-2 года (зависит от интенсивности). После этого мы порекомендуем вам, какие составы приобрести для обновления пропитки.
+              </div>
+            </details>
+
+            <details class="group bg-white border border-zinc-200 rounded-xl max-w-full [&_summary::-webkit-details-marker]:hidden">
+              <summary class="flex cursor-pointer items-center justify-between gap-1.5 px-6 py-4 text-zinc-900">
+                <h2 class="font-medium">Можно ли ставить горячую кружку прямо на столик?</h2>
+                <span class="shrink-0 rounded-full bg-zinc-100 p-2 sm:p-2 group-open:-rotate-180 transition-transform duration-300">
+                  <iconify-icon icon="solar:alt-arrow-down-linear"></iconify-icon>
+                </span>
+              </summary>
+              <div class="px-6 py-4 border-t border-zinc-100 text-sm text-zinc-600 font-light leading-relaxed">
+                Лучше использовать подставку. Для мрамора, травертина и оникса — горячее может вызвать микротрещины во внутренних слоях или локальное изменение цвета. Кварцит и гранит выдерживают высокие температуры, но мы рекомендуем всегда использовать подставку, чтобы не рисковать поверхностной глазурью.
+              </div>
+            </details>
+
+            <details class="group bg-white border border-zinc-200 rounded-xl max-w-full [&_summary::-webkit-details-marker]:hidden">
+              <summary class="flex cursor-pointer items-center justify-between gap-1.5 px-6 py-4 text-zinc-900">
+                <h2 class="font-medium">У меня травертин. Поверхность стала матовой в местах частых прикосновений. Это брак?</h2>
+                <span class="shrink-0 rounded-full bg-zinc-100 p-2 sm:p-2 group-open:-rotate-180 transition-transform duration-300">
+                  <iconify-icon icon="solar:alt-arrow-down-linear"></iconify-icon>
+                </span>
+              </summary>
+              <div class="px-6 py-4 border-t border-zinc-100 text-sm text-zinc-600 font-light leading-relaxed">
+                Это не брак. Со временем пористые породы меняют структуру и "затираются" от микрочастиц и масел — это называется «патина». Это свидетельство натуральности камня. Многие клиенты очень ценят именно этот процесс. Если он вам не нравится, проблему решает легкая профессиональная полировка поверхностных слоев.
+              </div>
+            </details>
+
+          </div>
+        </section>
+
+        <!-- Guarantee & CTA -->
+        <section class="bg-zinc-900 rounded-3xl p-8 md:p-12 text-white">
+          <div class="max-w-3xl">
+            <h2 class="text-3xl font-medium mb-6">Наша гарантия и ваша ответственность</h2>
+            <div class="space-y-4 font-light text-zinc-300 leading-relaxed mb-8">
+              <p>Мы гарантируем безупречное качество обработки, идеальную точность геометрии и подлинность каждого заявленного материала.</p>
+              <p class="font-medium text-white pt-2">Гарантия покрытия пятен <strong>не действует</strong>, если:</p>
+              <ul class="list-disc list-inside space-y-1 ml-2">
+                <li>На мрамор пролили вино, кофе или лимонный сок.</li>
+                <li>На чувствительный оникс поставили крутой кипяток.</li>
+                <li>Камень чистили агрессивной бытовой химией или абразивами.</li>
+              </ul>
+              <div class="mt-8 border-l-2 border-emerald-500 pl-4 py-1 italic font-normal text-zinc-400">
+                «Мы не продаём вам бездумный предмет. Мы даём вам партнёрство с вечной природой. Камень будет меняться с годами, но теперь вы знаете — почему. Скоро вы полюбите его ещё сильнее.»
+              </div>
+            </div>
+
+            <h3 class="text-xl font-medium mb-4 text-white">Остались вопросы? Нужна консультация по восстановлению?</h3>
+            <p class="text-zinc-400 font-light mb-8 max-w-xl">
+              Напишите нам, расскажите, что случилось. Мы подскажем, как убрать возникшее пятно или обновить защитную пропитку. Мы любим камень так же, как и вы.
             </p>
+            <button onclick="document.getElementById('contacts').scrollIntoView({behavior: 'smooth'})" class="bg-white text-zinc-900 font-medium py-3.5 px-8 rounded-lg hover:bg-zinc-100 transition-colors inline-block w-fit">
+              Написать нам
+            </button>
           </div>
-        </div>
-        <div class="max-w-7xl mx-auto px-6 py-12">
-          <div id="materials-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Dynamically generated materials will go here -->
-          </div>
-        </div>
+        </section>
+        
       </div>
-
-      <!-- Modal for Materials -->
-      <div id="material-modal" class="fixed inset-0 z-[60] flex items-center justify-center p-4 sm:p-6 bg-zinc-900/80 backdrop-blur-sm transition-all duration-300 opacity-0 pointer-events-none hidden" onclick="if(event.target === this) closeMaterialModal()">
-        <div class="bg-white rounded-2xl w-full max-w-4xl overflow-hidden shadow-2xl transform scale-95 transition-transform duration-300 flex flex-col md:flex-row relative">
-          <button onclick="closeMaterialModal()" class="absolute top-4 right-4 z-10 w-8 h-8 flex items-center justify-center bg-white/80 backdrop-blur-md rounded-full text-zinc-900 hover:bg-zinc-100 transition-colors focus:outline-none">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m16 8l-8 8m0-8l8 8m9-4a9 9 0 1 1-18 0a9 9 0 0 1 18 0Z"/></svg>
-          </button>
-          <div class="md:w-1/2 bg-zinc-100 flex items-center justify-center relative min-h-[300px] md:min-h-0">
-            <img id="modal-material-img" src="" alt="Material" class="absolute inset-0 w-full h-full object-cover">
-          </div>
-          <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center bg-white">
-            <h2 id="modal-material-title" class="text-2xl md:text-3xl font-medium tracking-tight text-zinc-900 uppercase mb-4"></h2>
-            <p id="modal-material-desc" class="text-zinc-600 text-sm md:text-base leading-relaxed"></p>
-          </div>
-        </div>
-      </div>
-
-      <!-- PAGE: PRIVACY POLICY -->
-      </main>
+    </div>
+</main>
 
     <!-- Cookie Consent Banner -->
     <div id="cookie-banner" class="fixed bottom-0 left-0 w-full bg-zinc-900 text-zinc-300 z-[100] transform translate-y-full transition-transform duration-500 border-t border-zinc-800 shadow-[0_-10px_40px_rgba(0,0,0,0.2)]">
@@ -342,195 +680,6 @@
           }
       ];
 
-      // --- Materials Data ---
-      const materialsList = [
-          {
-              name: "Negro Marquina",
-              image: "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/d0c3fabb-7b69-4500-8fb8-69f799c0f2c9_800w.jpg",
-              desc: "Элегантный черный мрамор с контрастными белыми прожилками. Идеален для создания строгих и стильных интерьеров."
-          },
-          {
-              name: "Orobico Rosso (Rosso Fendi)",
-              image: "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/3e8232c3-4e23-490b-9786-1ed4a432e4e2_800w.jpg",
-              desc: "Роскошный итальянский мрамор с уникальным рисунком из красных, серых и золотистых оттенков, напоминающий живописные полотна."
-          },
-          {
-              name: "VOLAKAS",
-              image: "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/fbec44d6-c147-4078-800a-1d427434c323_800w.jpg",
-              desc: "Классический белый мрамор из Греции с мягкими, струящимися серыми прожилками. Придает пространству легкость и аристократизм."
-          },
-          {
-              name: "Exotic Black",
-              image: "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/b2c57cab-e80d-45fe-885b-c9e53f5203d6_800w.jpg",
-              desc: "Выразительный темный гранит с глубокой текстурой и необычными вкраплениями, подчеркивающими природную мощь камня."
-          },
-          {
-              name: "ARABESCATO GRIGIO OROBICO",
-              image: "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/a1157770-f8d0-462e-aede-989e41607579_800w.jpg",
-              desc: "Эксклюзивный итальянский мрамор со сложным, затейливым узором в серых и бежевых тонах."
-          },
-          {
-              name: "ARABESCATO GRIGIO OROBICO",
-              image: "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/f2fa7552-fa15-4ddd-bdf0-3132623f8ff9_800w.jpg",
-              desc: "Эффектный мрамор с динамичным рисунком, создающий неповторимую игру света и тени в интерьере."
-          },
-          {
-              name: "PIETRA GREY",
-              image: "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/690a11fc-51df-4d72-bdb0-423cd99e493e_800w.jpg",
-              desc: "Благородный графитово-серый мрамор с тонкими, изящными белыми линиями. Отличный выбор для современных минималистичных дизайнов."
-          },
-          {
-              name: "ROSSO LEVANTO",
-              image: "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/a53aed52-84b1-4a37-b5df-8f5172003ff0_800w.jpg",
-              desc: "Насыщенный вишнево-красный мрамор из Италии с густой сетью белых прожилок. Привносит в интерьер драматизм и статусность."
-          },
-          {
-              name: "STATUARIETTO",
-              image: "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/733cdb8d-9319-45e8-9a3a-272094e77074_800w.jpg",
-              desc: "Утонченный белый мрамор с деликатным серым рисунком. Ценится за чистоту фона и элегантную текстуру."
-          },
-          {
-              name: "SILVER WAVE",
-              image: "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/9b9abf65-7c16-46fc-9e09-a2e8b5e199e6_800w.jpg",
-              desc: "Мрамор с завораживающим линейным узором, напоминающим серебристые волны на темном фоне."
-          },
-          {
-              name: "PIRGON",
-              image: "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/ae42eb1f-abb7-49de-bbe5-7a69b34a54aa_800w.jpg",
-              desc: "Нежный белый мрамор с легкими облачными включениями, придающий поверхности визуальную мягкость и объем."
-          },
-          {
-              name: "Rouge Epique",
-              image: "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/9529b12c-5fb1-4bfc-8add-d46292c32ecf_800w.jpg",
-              desc: "Экстравагантный камень глубоких красно-бордовых оттенков, который станет ярким акцентом в любом пространстве."
-          },
-          {
-              name: "ALEXANDRA BLACK",
-              image: "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/6d7afd4d-808c-45e1-8a83-5bd6cbc605fe_800w.jpg",
-              desc: "Строгий черный камень с загадочной текстурой, идеальный для создания контрастных и респектабельных интерьеров."
-          },
-          {
-              name: "Травертин CLASSIC VEIN CUT",
-              image: "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/3b5d1677-9f81-47e8-ac42-c7717d03d3d6_800w.jpg",
-              desc: "Традиционный бежевый травертин с продольным распилом, подчеркивающим полосатую текстуру, созданную самой природой."
-          },
-          {
-              name: "CALACATTA ORO",
-              image: "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/fd680790-d2b5-48e0-ab88-55ee03a0b7f0_800w.jpg",
-              desc: "Премиальный итальянский мрамор с теплым белым фоном и изысканными золотисто-серыми прожилками, воплощение роскоши."
-          },
-          {
-              name: "Травертин SILVER",
-              image: "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/3e0b3320-7664-423c-8333-780265a02062_800w.jpg",
-              desc: "Элегантный травертин в прохладных серебристо-серых тонах, сочетающий природную фактуру с современным цветовым решением."
-          },
-          {
-              name: "Травертин STRIATO FILLED HONED",
-              image: "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/08ef6bb0-1577-46ac-be53-b6ea31fb1ec6_800w.jpg",
-              desc: "Лощеный итальянский травертин с продольным рисунком (Striato) и заполненными порами для гладкой, теплой поверхности."
-          },
-          {
-              name: "Травертин IVORY",
-              image: "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/099815b5-3751-4ad8-a5bd-5d8dacdcd657_800w.jpg",
-              desc: "Светлый, оттенок слоновой кости, травертин, наполняющий помещение светом и ощущением природного тепла."
-          },
-          {
-              name: "Травертин STRIATO UNFILLED HONED",
-              image: "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/475fbe2f-a0c3-4346-912e-06f2d15f05b8_800w.jpg",
-              desc: "Травертин с открытыми порами и четко выраженной слоистой структурой, раскрывающий всю естественную красоту камня."
-          },
-          {
-              name: "Traonyx",
-              image: "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/1e8ca7f9-118b-4b47-b767-45be94e26ef3_800w.jpg",
-              desc: "Удивительное сочетание слоистого травертина и полупрозрачного оникса в одном камне, создающее богатство фактур."
-          },
-          {
-              name: "Оникс GREY",
-              image: "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/e7e67341-30d1-4657-aa47-cb990cc65f29_800w.jpg",
-              desc: "Редкий серый оникс, обладающий светопропускной способностью. Идеально подходит для эффектных порталов с подсветкой."
-          },
-          {
-              name: "Оникс VERDE",
-              image: "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/44a0e496-63e4-497b-915c-7ddd1a387d9c_800w.jpg",
-              desc: "Классический зеленый оникс с живописными слоистыми переходами от глубокого изумрудного до нежно-салатового."
-          },
-          {
-              name: "Оникс GOLDEN TIGER",
-              image: "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/0fb8f2e3-6240-4f65-8bf4-c454e4acbcac_800w.jpg",
-              desc: "Поистине роскошный камень с янтарными и золотистыми полосами, напоминающими окрас тигра и излучающий тепло."
-          },
-          {
-              name: "Оникс TERRA BLUE",
-              image: "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/50423239-7dcf-4476-a0c2-2d3cf584ee84_800w.jpg",
-              desc: "Экзотический оникс с уникальными голубоватыми и землистыми оттенками, создающий атмосферу магии и умиротворения."
-          },
-          {
-              name: "Оникс WHITE LINES",
-              image: "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/58ff174b-d04d-4cde-83ee-90806bd8fff2_800w.jpg",
-              desc: "Белоснежный оникс с тонкими, едва уловимыми линиями, поражающий своей чистотой и способностью светиться изнутри."
-          },
-          {
-              name: "Silver Roots",
-              image: "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/28808e0f-afe7-42d3-9791-1fd727151bbf_800w.jpg",
-              desc: "Мрамор с невероятной паутиной серебристых 'корней' на темном фоне, добавляющий интерьеру брутальности и характера."
-          },
-          {
-              name: "Травертин Jurassic",
-              image: "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/43f9db38-8f4f-4f1d-b21e-a7097fd89ca6_800w.jpg",
-              desc: "Уникальный травертин с ярко выраженными отпечатками древних эпох, настоящий природный артефакт в вашем доме."
-          },
-          {
-              id: 6,
-              name: "Лимо",
-              price: "150 000",
-              cat: "Журнальный столик",
-              desc: "Вдохновлен античной архитектурой, но создан для современного пространства. Рельефное основание с мерными каннелюрами играет со светом и тенью, превращая камень в тактильное удовольствие. Классическая колонна, переосмысленная в функциональный и выразительный предмет искусства.",
-              specs: [
-                  "Доступные материалы: травертин или мрамор.",
-                  "Диаметр столешницы: 40 см, высота: 50 см.",
-                  "Срок изготовления: от 30 дней."
-              ],
-              images: [
-                  "фото столиков/limo/1.webp",
-                  "фото столиков/limo/2.webp",
-                  "фото столиков/limo/3.webp",
-                  "фото столиков/limo/4.webp",
-                  "фото столиков/limo/5.webp"
-              ]
-          }
-      ];
-
-      function openMaterialModal(index) {
-          const material = materialsList[index];
-          if(!material) return;
-          document.getElementById('modal-material-title').innerText = material.name;
-          document.getElementById('modal-material-desc').innerText = material.desc;
-          document.getElementById('modal-material-img').src = material.image;
-          
-          const modal = document.getElementById('material-modal');
-          const modalInner = modal.querySelector('div.bg-white');
-          
-          modal.classList.remove('hidden');
-          setTimeout(() => {
-              modal.classList.remove('opacity-0', 'pointer-events-none');
-              modalInner.classList.remove('scale-95');
-              modalInner.classList.add('scale-100');
-          }, 10);
-      }
-
-      function closeMaterialModal() {
-          const modal = document.getElementById('material-modal');
-          const modalInner = modal.querySelector('div.bg-white');
-          
-          modal.classList.add('opacity-0', 'pointer-events-none');
-          modalInner.classList.add('scale-95');
-          modalInner.classList.remove('scale-100');
-          
-          setTimeout(() => {
-              modal.classList.add('hidden');
-          }, 300);
-      }
-
       // --- Init Catalog ---
       const grid = document.getElementById('catalog-grid');
       if (grid) {
@@ -545,22 +694,6 @@
                       </div>
                       <h3 class="text-base font-medium text-zinc-900">${p.name}</h3>
                       <p class="text-xs text-zinc-500 mt-1">${p.cat}</p>
-                  </div>
-              `;
-          });
-      }
-
-      const materialsGrid = document.getElementById('materials-grid');
-      if (materialsGrid) {
-          materialsList.forEach((m, idx) => {
-              materialsGrid.innerHTML += `
-                  <div onclick="openMaterialModal(${idx})" class="group cursor-pointer">
-                    <div class="aspect-square rounded-2xl overflow-hidden bg-zinc-100 mb-4 relative border border-zinc-100">
-                      <img src="${m.image}" alt="${m.name}" class="group-hover:scale-105 transition-transform duration-700 w-full h-full object-cover">
-                    </div>
-                    <h3 class="text-lg font-medium text-zinc-900 uppercase">
-                      ${m.name}
-                    </h3>
                   </div>
               `;
           });
