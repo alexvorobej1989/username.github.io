@@ -74,11 +74,22 @@
           <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon>
         </button>
 
-        <button class="md:hidden text-zinc-900">
+        <button class="md:hidden text-zinc-900 focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
           <iconify-icon icon="solar:hamburger-menu-linear" width="24"></iconify-icon>
         </button>
       </div>
     </nav>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden fixed w-full z-30 top-16 left-0 bg-white border-b border-zinc-200/60 shadow-lg">
+      <div class="flex flex-col px-6 py-4 space-y-4 text-sm font-medium text-zinc-600">
+        <button onclick="route('catalog'); document.getElementById('mobile-menu').classList.add('hidden')" class="text-left py-2 hover:text-zinc-900 border-b border-zinc-100">Коллекция</button>
+        <button onclick="route('materials'); document.getElementById('mobile-menu').classList.add('hidden')" class="text-left py-2 hover:text-zinc-900 border-b border-zinc-100">Материалы</button>
+        <button onclick="route('care'); document.getElementById('mobile-menu').classList.add('hidden')" class="text-left py-2 hover:text-zinc-900 border-b border-zinc-100">Уход за камнем</button>
+        <button onclick="route('home', 'about'); document.getElementById('mobile-menu').classList.add('hidden')" class="text-left py-2 hover:text-zinc-900 border-b border-zinc-100">О нас</button>
+        <button onclick="route('home', 'contacts'); document.getElementById('mobile-menu').classList.add('hidden')" class="bg-zinc-900 text-white py-3 rounded-lg text-center mt-4 font-medium transition-colors hover:bg-zinc-800">Заказать расчет</button>
+      </div>
+    </div>
+
 
   <!-- MAIN CONTENT CONTAINER -->
   <main id="app-content" class="flex-grow pt-16">
@@ -208,7 +219,7 @@
             </div>
             <div onclick="openProduct(2)" class="group cursor-pointer">
               <div class="aspect-square bg-zinc-100 rounded-xl overflow-hidden mb-4 relative">
-                <img src="фото столиков/soft lines/нужно/soft lines основная.jpg"
+                <img src="фото столиков/soft lines/1.webp"
                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
               </div>
               <h3 class="text-lg font-medium text-zinc-900">Канеле</h3>
@@ -1040,12 +1051,11 @@
                   "Срок изготовления: от 30 дней."
               ],
               images: [
-                  "фото столиков/soft lines/нужно/soft lines основная.jpg",
-                  "фото столиков/soft lines/нужно/2.jpg",
-                  "фото столиков/soft lines/нужно/3.jpg",
-                  "фото столиков/soft lines/нужно/4.jpg",
-                  "фото столиков/soft lines/нужно/5.png",
-                  "фото столиков/soft lines/нужно/6.png"
+                  "фото столиков/soft lines/1.webp",
+                  "фото столиков/soft lines/2.webp",
+                  "фото столиков/soft lines/3.webp",
+                  "фото столиков/soft lines/4.webp",
+                  "фото столиков/soft lines/5.webp"
               ]
           },
           {
